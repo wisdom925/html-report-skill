@@ -1,6 +1,6 @@
-# claude-html-report-skill
+# agy-html-report-skill
 
-A Claude Code skill that makes Claude generate **rich, interactive HTML reports** instead of markdown — and publishes them to your own GitHub Pages site so you can share a public URL.
+A skill for Antigravity CLI (agy cli) that makes the agent generate **rich, interactive HTML reports** instead of markdown — and publishes them to your own GitHub Pages site so you can share a public URL.
 
 > **This is a GitHub template.** Click ▸ **Use this template** at the top of the page to create your own copy. Forking is the wrong choice here (forks are for upstream PRs; templates are for "clone and diverge", which is what reports are).
 
@@ -8,7 +8,7 @@ A Claude Code skill that makes Claude generate **rich, interactive HTML reports*
 
 ## Why?
 
-Claude defaults to markdown for everything. Markdown is fine for plain text, but the moment your output has data, comparisons, code, or detail readers want to navigate, you want HTML:
+Antigravity CLI (agy) defaults to markdown for everything. Markdown is fine for plain text, but the moment your output has data, comparisons, code, or detail readers want to navigate, you want HTML:
 
 - interactive **charts** (Chart.js / Plotly)
 - **sortable / searchable / filterable tables**
@@ -18,7 +18,7 @@ Claude defaults to markdown for everything. Markdown is fine for plain text, but
 - **Mermaid** diagrams, **KaTeX** math
 - **dark mode**, **print stylesheets**, **mobile responsive**, **OG link previews**
 
-This skill nudges Claude to lean into all of that — and gives you a one-line publish flow.
+This skill nudges the agent to lean into all of that — and gives you a one-line publish flow.
 
 See [the live example report](./reports/2026-05-10-example-showcase.html) for what you get.
 
@@ -37,16 +37,16 @@ git clone git@github.com:<your-username>/<your-repo>.git ~/reports
 cd ~/reports
 ```
 
-### 3. Install the skill into Claude Code
+### 3. Install the skill into Antigravity CLI (agy cli)
 
-Symlink the skill directory into Claude's global skills folder. The symlink means future updates to the skill (yours or upstream) are picked up automatically.
+Symlink the skill directory into Antigravity's global skills folder. The symlink means future updates to the skill (yours or upstream) are picked up automatically.
 
 ```bash
-mkdir -p ~/.claude/skills
-ln -s "$(pwd)/.claude/skills/html-report" ~/.claude/skills/html-report
+mkdir -p ~/.antigravitycli/skills
+ln -s "$(pwd)/.antigravitycli/skills/html-report" ~/.antigravitycli/skills/html-report
 ```
 
-> Prefer not to symlink? Just `cp -r .claude/skills/html-report ~/.claude/skills/` instead. Re-copy when the skill changes.
+> Prefer not to symlink? Just `cp -r .antigravitycli/skills/html-report ~/.antigravitycli/skills/` instead. Re-copy when the skill changes.
 
 ### 4. Enable GitHub Pages on your new repo
 
@@ -58,7 +58,7 @@ You usually **don't need to edit anything** — the publish script auto-detects:
 - the local repo path (from where the script lives on disk, even via symlink)
 - the GitHub Pages URL (from `git remote origin`)
 
-Edit [`.claude/skills/html-report/config.json`](.claude/skills/html-report/config.json) only if:
+Edit [`.antigravitycli/skills/html-report/config.json`](.antigravitycli/skills/html-report/config.json) only if:
 - you cloned to a path the auto-detect can't find (e.g. you copied the skill dir somewhere else and the repo lives elsewhere)
 - you use a custom domain (set `base_url`)
 
@@ -68,7 +68,7 @@ That's the entire setup.
 
 ## Use it
 
-In Claude Code, ask Claude to generate any report and mention the skill:
+In Antigravity CLI, ask the agent to generate any report and mention the skill:
 
 ```
 use the html-report skill to write up the results from runs/exp-42
@@ -79,13 +79,13 @@ make an html-report comparing these three checkpoints
 ```
 
 ```
-/html-report   # if Claude exposes it as a slash command in your version
+/html-report   # if the agent exposes it as a slash command
 ```
 
-Claude will:
+The agent will:
 1. Plan the report (which sections benefit from charts vs tables vs tabs vs collapsibles).
-2. Generate a self-contained HTML file at `reports/<YYYY-MM-DD>-<slug>.html` using [`templates/base.html`](.claude/skills/html-report/templates/base.html) as a starting point.
-3. Run [`scripts/publish.py`](.claude/skills/html-report/scripts/publish.py), which updates the manifest, commits, pushes, and prints the URL.
+2. Generate a self-contained HTML file at `reports/<YYYY-MM-DD>-<slug>.html` using [`templates/base.html`](.antigravitycli/skills/html-report/templates/base.html) as a starting point.
+3. Run [`scripts/publish.py`](.antigravitycli/skills/html-report/scripts/publish.py), which updates the manifest, commits, pushes, and prints the URL.
 4. Hand you back something like `https://<you>.github.io/<repo>/reports/2026-05-10-my-report.html`.
 
 The landing page at `https://<you>.github.io/<repo>/` lists every report (with a filter input).
@@ -109,13 +109,13 @@ your-repo/
 ├── reports/
 │   ├── manifest.json         ← list of {file, title, date, description}
 │   └── *.html                ← one self-contained file per report
-└── .claude/
+└── .antigravitycli/
     └── skills/
         └── html-report/      ← symlink target
-            ├── SKILL.md      ← what Claude reads to know how to behave
+            ├── SKILL.md      ← what the agent reads to know how to behave
             ├── config.json   ← optional path / base_url overrides
             ├── templates/
-            │   └── base.html ← starter template Claude copies & enriches
+            │   └── base.html ← starter template the agent copies & enriches
             └── scripts/
                 └── publish.py
 ```
@@ -123,15 +123,15 @@ your-repo/
 The skill lives **inside the same repo** as the reports it produces. That's deliberate:
 - you only manage one repo
 - the skill source ships with the published example, so you can see exactly what you're getting before you fork
-- if you ever open the repo in Claude Code, the skill auto-loads as a project skill (no symlink needed for that case)
+- if you ever open the repo in Antigravity CLI, the skill auto-loads as a project skill (no symlink needed for that case)
 
 ---
 
 ## Customizing the look
 
-- Edit [`templates/base.html`](.claude/skills/html-report/templates/base.html) to change default fonts, colors, libraries, or chrome. Claude copies this file as the starting point for every new report.
+- Edit [`templates/base.html`](.antigravitycli/skills/html-report/templates/base.html) to change default fonts, colors, libraries, or chrome. The agent copies this file as the starting point for every new report.
 - Edit [`index.html`](index.html) to restyle the landing page.
-- Edit [`SKILL.md`](.claude/skills/html-report/SKILL.md) to change Claude's behavior (which libraries to prefer, what counts as the "quality bar", etc.). The skill instructions are the most powerful lever — tweak them to suit your taste.
+- Edit [`SKILL.md`](.antigravitycli/skills/html-report/SKILL.md) to change the agent's behavior (which libraries to prefer, what counts as the "quality bar", etc.). The skill instructions are the most powerful lever — tweak them to suit your taste.
 
 ---
 
@@ -140,10 +140,10 @@ The skill lives **inside the same repo** as the reports it produces. That's deli
 If you want to track improvements to this skill over time:
 
 ```bash
-git remote add upstream https://github.com/<original-owner>/claude-html-report-skill.git
+git remote add upstream https://github.com/wisdom925/html-report-skill.git
 git fetch upstream
 # update only the skill files; leave your reports/ alone
-git checkout upstream/main -- .claude/ index.html
+git checkout upstream/main -- .antigravitycli/ index.html
 ```
 
 ---

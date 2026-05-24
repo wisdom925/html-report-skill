@@ -96,8 +96,8 @@ def _resolve_repo_path(cfg: dict) -> Path:
     if raw:
         repo = Path(os.path.expanduser(raw)).resolve()
     else:
-        # Auto-detect: this script lives at <repo>/.claude/skills/html-report/scripts/publish.py.
-        # SCRIPT_DIR.parents[0..3] = scripts, html-report, skills, .claude. parents[3] = <repo>.
+        # Auto-detect: this script lives at <repo>/.antigravitycli/skills/html-report/scripts/publish.py.
+        # SCRIPT_DIR.parents[0..3] = scripts, html-report, skills, .antigravitycli. parents[3] = <repo>.
         repo = SCRIPT_DIR.resolve().parents[3]
     if not (repo / ".git").exists():
         sys.exit(
