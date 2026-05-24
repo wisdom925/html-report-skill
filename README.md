@@ -1,74 +1,74 @@
 # agy-html-report-skill
 
-A skill for Antigravity CLI (agy cli) that makes the agent generate **rich, interactive HTML reports** instead of markdown — and publishes them to your own GitHub Pages site so you can share a public URL.
+一個適用於 Antigravity CLI (agy cli) 的 Skill，能讓 Agent 生成**豐富且具互動性的 HTML 報告**而非 Markdown，並發布到您專屬的 GitHub Pages 網站，以便您可以分享公開的 URL 連結。
 
-> **This is a GitHub template.** Click ▸ **Use this template** at the top of the page to create your own copy. Forking is the wrong choice here (forks are for upstream PRs; templates are for "clone and diverge", which is what reports are).
-
----
-
-## Why?
-
-Antigravity CLI (agy) defaults to markdown for everything. Markdown is fine for plain text, but the moment your output has data, comparisons, code, or detail readers want to navigate, you want HTML:
-
-- interactive **charts** (Chart.js / Plotly)
-- **sortable / searchable / filterable tables**
-- **tabs** for comparing alternatives without scrolling
-- **collapsible** sections for optional depth
-- syntax-highlighted **code** with copy buttons
-- **Mermaid** diagrams, **KaTeX** math
-- **dark mode**, **print stylesheets**, **mobile responsive**, **OG link previews**
-
-This skill nudges the agent to lean into all of that — and gives you a one-line publish flow.
-
-See [the live example report](./reports/2026-05-10-example-showcase.html) for what you get.
+> **本專案是一個 GitHub 範本。** 點擊頁面頂部的 ▸ **Use this template** 來建立您自己的副本。在這種情況下，選擇 Fork 是不合適的（Fork 適用於向上游提交 PR；而範本則適用於「複製並獨立分流」，這正是報告所需要的）。
 
 ---
 
-## Setup (≈ 3 minutes, one-time)
+## 為什麼？
 
-### 1. Create your repo from this template
+Antigravity CLI (agy) 預設會為所有輸出使用 Markdown。Markdown 處理純文字很好，但當您的輸出包含數據、對比、程式碼或讀者想要點選尋找的詳細資訊時，您會需要 HTML：
 
-Click ▸ **Use this template → Create a new repository** at the top of this page. Name it whatever you like (e.g. `reports`).
+- 互動式**圖表** (Chart.js / Plotly)
+- **支援排序 / 搜尋 / 篩選的表格**
+- 便於比對多個選項且無需滾動頁面的**分頁標籤 (Tabs)**
+- 提供選擇性閱讀深度的**摺疊收合**區域 (Collapsible sections)
+- 帶有複製按鈕且高亮顯示的**程式碼塊**
+- **Mermaid** 流程圖、**KaTeX** 數學公式
+- **深色模式**、**列印樣式表**、**行動裝置響應式佈局**、**OG 連結預覽**
 
-### 2. Clone it locally
+這個 Skill 會引導 Agent 善用上述所有 HTML 優勢，並為您提供一鍵式的發布流程。
+
+請參閱 [即時範例報告](./reports/2026-05-10-example-showcase.html) 以了解實際效果。
+
+---
+
+## 設定 (只需一次，約 3 分鐘)
+
+### 1. 從此範本建立您的儲存庫
+
+點擊本頁面頂部的 ▸ **Use this template → Create a new repository**。自行為儲存庫命名（例如 `reports`）。
+
+### 2. 複製至本地端
 
 ```bash
 git clone git@github.com:<your-username>/<your-repo>.git ~/reports
 cd ~/reports
 ```
 
-### 3. Install the skill into Antigravity CLI (agy cli)
+### 3. 將 Skill 安裝至 Antigravity CLI (agy cli)
 
-Symlink the skill directory into Antigravity's global skills folder. The symlink means future updates to the skill (yours or upstream) are picked up automatically.
+在本地將 Skill 目錄軟連結（symlink）至 Antigravity 的全域 skills 資料夾中。使用軟連結意味著未來該 Skill 的任何更新（您自己修改或上游更新）都會自動生效。
 
 ```bash
 mkdir -p ~/.antigravitycli/skills
 ln -s "$(pwd)/.antigravitycli/skills/html-report" ~/.antigravitycli/skills/html-report
 ```
 
-> Prefer not to symlink? Just `cp -r .antigravitycli/skills/html-report ~/.antigravitycli/skills/` instead. Re-copy when the skill changes.
+> 不想建立軟連結？也可以直接將資料夾複製過去：`cp -r .antigravitycli/skills/html-report ~/.antigravitycli/skills/`。當 Skill 有變更時再重新複製即可。
 
-### 4. Enable GitHub Pages on your new repo
+### 4. 啟用您新儲存庫的 GitHub Pages
 
-GitHub → your repo → **Settings → Pages** → **Source: Deploy from a branch** → **Branch: `main` / `(root)`** → Save. Wait ~1 min for the first deploy.
+前往 GitHub → 您的儲存庫 → **Settings → Pages** → **Source: Deploy from a branch** → **Branch: `main` / `(root)`** → 按下 Save。首次部署請稍候約 1 分鐘。
 
-### 5. (Optional) Edit `config.json`
+### 5. （選填）編輯 `config.json`
 
-You usually **don't need to edit anything** — the publish script auto-detects:
-- the local repo path (from where the script lives on disk, even via symlink)
-- the GitHub Pages URL (from `git remote origin`)
+通常您**不需要修改任何設定**，發布腳本會自動偵測：
+- 本地儲存庫路徑（從腳本在硬碟上的實際位置自動判定，亦支援軟連結）
+- GitHub Pages 的網址（從 `git remote origin` 中自動讀取）
 
-Edit [`.antigravitycli/skills/html-report/config.json`](.antigravitycli/skills/html-report/config.json) only if:
-- you cloned to a path the auto-detect can't find (e.g. you copied the skill dir somewhere else and the repo lives elsewhere)
-- you use a custom domain (set `base_url`)
+只有在以下情況下，才需要編輯 [`.antigravitycli/skills/html-report/config.json`](.antigravitycli/skills/html-report/config.json)：
+- 您將儲存庫複製到自動偵測找不到的特殊路徑
+- 您想使用自訂網域（請設定 `base_url`）
 
-That's the entire setup.
+這就是所有的設定步驟！
 
 ---
 
-## Use it
+## 開始使用
 
-In Antigravity CLI, ask the agent to generate any report and mention the skill:
+在 Antigravity CLI 中，要求 Agent 生成任何報告並提及此 Skill：
 
 ```
 use the html-report skill to write up the results from runs/exp-42
@@ -79,103 +79,103 @@ make an html-report comparing these three checkpoints
 ```
 
 ```
-/html-report   # if the agent exposes it as a slash command
+/html-report   # 如果您的 Agent 支援將其作為斜線指令 (slash command) 觸發
 ```
 
-The agent will:
-1. Plan the report (which sections benefit from charts vs tables vs tabs vs collapsibles).
-2. Generate a self-contained HTML file at `reports/<YYYY-MM-DD>-<slug>.html` using [`templates/base.html`](.antigravitycli/skills/html-report/templates/base.html) as a starting point.
-3. Run [`scripts/publish.py`](.antigravitycli/skills/html-report/scripts/publish.py), which updates the manifest, commits, pushes, and prints the URL.
-4. Hand you back something like `https://<you>.github.io/<repo>/reports/2026-05-10-my-report.html`.
+Agent 將會：
+1. 規劃報告（決定哪些區塊適合使用圖表、表格、分頁標籤或摺疊面板）。
+2. 使用 [`templates/base.html`](.antigravitycli/skills/html-report/templates/base.html) 作為起點，在 `reports/<YYYY-MM-DD>-<slug>.html` 產生一個獨立的 HTML 檔案。
+3. 執行 [`scripts/publish.py`](.antigravitycli/skills/html-report/scripts/publish.py)，以更新清單檔案（manifest）、自動提交 Git Commit、推送（Push）並輸出網址。
+4. 將產生的公開 URL（例如 `https://<you>.github.io/<repo>/reports/2026-05-10-my-report.html`）返回給您。
 
-The landing page at `https://<you>.github.io/<repo>/` lists every report (with a filter input).
+位於 `https://<you>.github.io/<repo>/` 的首頁會列出所有已生成的報告（並提供篩選輸入框）。
 
 ---
 
-## Requirements
+## 系統需求
 
 - `git`, `python3` (≥ 3.8), `bash`
-- A GitHub account with push access to your new repo (SSH key or credential helper configured)
+- 擁有推送權限的 GitHub 帳號（已設定 SSH 金鑰或憑證協助程式）
 
-No `jq`, no node, no build step. The publish script is pure Python stdlib.
+不需要安裝 `jq`，不需要 `node`，也沒有繁瑣的打包編譯步驟（Build step）。發布腳本使用純 Python 標準函式庫編寫。
 
 ---
 
-## How it's wired
+## 架構原理
 
 ```
 your-repo/
-├── index.html                ← landing page; reads reports/manifest.json
+├── index.html                ← 首頁；讀取 reports/manifest.json
 ├── reports/
-│   ├── manifest.json         ← list of {file, title, date, description}
-│   └── *.html                ← one self-contained file per report
+│   ├── manifest.json         ← 包含 {file, title, date, description} 的報告清單
+│   └── *.html                ← 每次生成且獨立的 HTML 報告檔案
 └── .antigravitycli/
     └── skills/
-        └── html-report/      ← symlink target
-            ├── SKILL.md      ← what the agent reads to know how to behave
-            ├── config.json   ← optional path / base_url overrides
+        └── html-report/      ← 軟連結目標
+            ├── SKILL.md      ← Agent 讀取並遵循的行為指南
+            ├── config.json   ← 選填的路徑與 base_url 覆寫設定
             ├── templates/
-            │   └── base.html ← starter template the agent copies & enriches
+            │   └── base.html ← 起始範本，Agent 會複製並豐富其內容
             └── scripts/
                 └── publish.py
 ```
 
-The skill lives **inside the same repo** as the reports it produces. That's deliberate:
-- you only manage one repo
-- the skill source ships with the published example, so you can see exactly what you're getting before you fork
-- if you ever open the repo in Antigravity CLI, the skill auto-loads as a project skill (no symlink needed for that case)
+此 Skill 直接存放在**報告生成的同一個儲存庫中**。這是刻意設計的：
+- 您只需要管理單個 Git 儲存庫。
+- Skill 原始碼與發布範例一同隨附，讓您在套用範本之前能看清所有細節。
+- 如果您在 Antigravity CLI 中直接打開此儲存庫，該 Skill 就會自動載入為專案專屬 Skill（此時無需建立軟連結）。
 
 ---
 
-## Customizing the look
+## 自訂外觀
 
-- Edit [`templates/base.html`](.antigravitycli/skills/html-report/templates/base.html) to change default fonts, colors, libraries, or chrome. The agent copies this file as the starting point for every new report.
-- Edit [`index.html`](index.html) to restyle the landing page.
-- Edit [`SKILL.md`](.antigravitycli/skills/html-report/SKILL.md) to change the agent's behavior (which libraries to prefer, what counts as the "quality bar", etc.). The skill instructions are the most powerful lever — tweak them to suit your taste.
+- 編輯 [`templates/base.html`](.antigravitycli/skills/html-report/templates/base.html) 以變更預設字型、色彩、載入的函式庫或版面佈局。Agent 會將此檔案複製為每份新報告的起點。
+- 編輯 [`index.html`](index.html) 來重新設計報告列表首頁的樣式。
+- 編輯 [`SKILL.md`](.antigravitycli/skills/html-report/SKILL.md) 以調整 Agent 的行為模式（例如更偏好哪些圖表庫、高標品質定義等）。Skill 指南是最強大的微調槓桿——請根據您的喜好進行客製化。
 
 ---
 
-## Pulling upstream updates
+## 拉取上游更新
 
-If you want to track improvements to this skill over time:
+如果您希望跟隨本專案後續的優化更新：
 
 ```bash
 git remote add upstream https://github.com/wisdom925/html-report-skill.git
 git fetch upstream
-# update only the skill files; leave your reports/ alone
+# 僅更新 Skill 相關檔案，保留您自己寫好的 reports/ 報告目錄
 git checkout upstream/main -- .antigravitycli/ index.html
 ```
 
 ---
 
-## Why a template, not a fork?
+## 為什麼是範本（Template）而不是 Fork？
 
-| | Fork | Template |
+| | Fork | Template (範本) |
 |---|---|---|
-| Tracks upstream by default | yes | no |
-| Designed for sending PRs back | yes | no |
-| Your commit history is yours | shared | yours |
-| Good for "clone and diverge" | no | **yes** |
+| 預設追蹤上游變更 | 是 | 否 |
+| 設計用於向源專案提交 PR | 是 | 否 |
+| 提交歷史（Commit History）完全獨立 | 共享 | 獨立屬於您 |
+| 適合「複製並獨立分流」 | 否 | **是** |
 
-You're going to fill this repo with **your** reports. You don't want a fork relationship cluttering the GitHub UI with "this branch is 47 commits ahead of upstream" warnings forever. Templates are the right primitive.
-
----
-
-## Draft mode
-
-If you ask Claude *"just draft it, don't push yet"*, Claude will pass `--draft` to the publish script. Manifest still updates locally; nothing is committed or pushed. You get the local file path back instead of a URL.
+您將會在這個儲存庫中寫滿**您自己的報告**。您肯定不希望 GitHub 介面上一直顯示「此分支領先/落後上游 xx 個 Commit」的提示。因此，GitHub Template（範本）是此場景下最合適的原始模型。
 
 ---
 
-## Troubleshooting
+## 草稿模式 (Draft mode)
 
-- **`ERROR: ... is not a git repository`** — your `local_repo_path` (or auto-detected path) doesn't point at a git repo. Either clone the repo to that path, or set `local_repo_path` in `config.json` explicitly.
-- **`git push` failed** — check your SSH/HTTPS auth. The report file is committed locally; just `git push` manually once auth is fixed.
-- **Pages URL 404s for ~1 minute** — GitHub Pages takes a moment after first enable. Wait, then refresh.
-- **Mermaid / KaTeX not rendering** — they're loaded from jsdelivr; check browser console for CSP / network issues.
+如果您對 Agent 說 *"先寫草稿就好，暫時不要 Push"*，Agent 在執行發布腳本時會自動帶入 `--draft` 參數。此時僅會更新本地端的清單檔案（manifest），而不會進行 Git Commit 或 Push。您將會直接拿回本地檔案的絕對路徑而非網址。
 
 ---
 
-## License
+## 常見問題排除
 
-MIT. See [LICENSE](LICENSE).
+- **`ERROR: ... is not a git repository`**：表示您的 `local_repo_path`（或自動偵測到的路徑）不指向一個有效的 Git 儲存庫。請將專案 clone 到該路徑，或者在 `config.json` 中顯式設定 `local_repo_path`。
+- **`git push` 失敗**：請檢查您的 SSH/HTTPS 連線與 GitHub 權限。報告檔案此時已儲存在本地的 Commit 中，待網路或權限排除後手動執行 `git push` 即可。
+- **Pages 網址顯示 404**：GitHub Pages 啟用後需要大約 1 分鐘的時間進行首度部署。請稍候並重新整理網頁。
+- **Mermaid 或 KaTeX 無法正常載入**：它們是透過 CDN (jsdelivr) 載入，請開啟瀏覽器的開發者工具主控台（Console）檢查是否有 CSP 安全政策攔截或網路問題。
+
+---
+
+## 授權條款
+
+MIT。詳見 [LICENSE](LICENSE)。
