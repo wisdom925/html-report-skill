@@ -86,7 +86,7 @@ def _load_config() -> dict:
     if not CONFIG_PATH.exists():
         sys.exit(f"ERROR: missing config file at {CONFIG_PATH}")
     try:
-        return json.loads(CONFIG_PATH.read_text())
+        return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
         sys.exit(f"ERROR: invalid JSON in {CONFIG_PATH}: {e}")
 
@@ -134,7 +134,7 @@ def _update_manifest(path: Path, filename: str, title: str, report_date: str, de
     path.parent.mkdir(parents=True, exist_ok=True)
     if path.exists():
         try:
-            items = json.loads(path.read_text())
+            items = json.loads(path.read_text(encoding="utf-8"))
             if not isinstance(items, list):
                 items = []
         except json.JSONDecodeError:
@@ -148,7 +148,7 @@ def _update_manifest(path: Path, filename: str, title: str, report_date: str, de
         "date": report_date,
         "description": description,
     })
-    path.write_text(json.dumps(items, indent=2) + "\n")
+    path.write_text(json.dumps(items, indent=2) + "\n", encoding="utf-8")
 
 
 def _derive_base_url(repo_path: Path) -> str:
