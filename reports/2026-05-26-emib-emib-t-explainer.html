@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EMIB 與 EMIB-T：Intel 先進封裝的水平互連與垂直供電升級</title>
+  <meta name="description" content="用封裝工程視角解釋 Intel EMIB 與 EMIB-T：EMIB 解決晶粒間高速水平互連，EMIB-T 進一步改善垂直供電與電源雜訊。">
+  <meta property="og:title" content="EMIB 與 EMIB-T：Intel 先進封裝的水平互連與垂直供電升級">
+  <meta property="og:description" content="用封裝工程視角解釋 Intel EMIB 與 EMIB-T：EMIB 解決晶粒間高速水平互連，EMIB-T 進一步改善垂直供電與電源雜訊。">
+  <meta property="og:type" content="article">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: { fontFamily: { sans: ['Inter', 'system-ui', 'ui-sans-serif', 'sans-serif'] } } } };
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && matchMedia('(prefers-color-scheme: dark)').matches)) {
+      document.documentElement.classList.add('dark');
+    }
+  </script>
+  <style>
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+    @media print { .no-print { display: none !important; } body { color: #000; background: #fff; } a { color: inherit; text-decoration: underline; } details { display: block; } details > summary { display: none; } }
+    :root { --bg: #f8fafc; --panel: #ffffff; --ink: #0f172a; --muted: #64748b; --line: #e2e8f0; --accent: #2563eb; --accent2: #7c3aed; --good: #059669; --risk: #f97316; --chip: #dbeafe; --bridge: #d1d5db; --substrate: #e2e8f0; }
+    .dark { --bg: #020617; --panel: #0f172a; --ink: #e5e7eb; --muted: #94a3b8; --line: #334155; --accent: #60a5fa; --accent2: #a78bfa; --good: #34d399; --risk: #fb923c; --chip: #172554; --bridge: #475569; --substrate: #1e293b; }
+    body { background: radial-gradient(circle at top left, rgba(37,99,235,.16), transparent 34rem), radial-gradient(circle at bottom right, rgba(124,58,237,.12), transparent 30rem), var(--bg); color: var(--ink); }
+    .card { background: color-mix(in srgb, var(--panel) 94%, transparent); border: 1px solid var(--line); border-radius: 1.25rem; box-shadow: 0 18px 50px rgba(15, 23, 42, .08); }
+    .kicker { color: var(--accent); letter-spacing: .14em; text-transform: uppercase; font-weight: 800; font-size: .75rem; }
+    .toc a { display: block; padding: .28rem 0; opacity: .62; transition: opacity .15s, color .15s; }
+    .toc a:hover, .toc a.active { opacity: 1; color: var(--accent); }
+    .pill { border: 1px solid var(--line); border-radius: 999px; padding: .35rem .7rem; font-size: .78rem; color: var(--muted); background: color-mix(in srgb, var(--panel) 84%, transparent); }
+    .muted { color: var(--muted); }
+    .metric { border-left: 4px solid var(--accent); }
+    .metric.good { border-left-color: var(--good); }
+    .metric.risk { border-left-color: var(--risk); }
+    .chart-wrap { height: 300px; }
+    .mini-chart { height: 230px; }
+    details > summary { cursor: pointer; user-select: none; }
+    details > summary::marker { content: "▸ "; }
+    details[open] > summary::marker { content: "▾ "; }
+    .diagram svg { width: 100%; height: auto; }
+    .svg-text { fill: var(--ink); font-size: 13px; font-weight: 700; }
+    .svg-muted { fill: var(--muted); font-size: 11px; }
+    .svg-chip { fill: var(--chip); stroke: var(--accent); stroke-width: 2; }
+    .svg-substrate { fill: var(--substrate); stroke: var(--line); stroke-width: 2; }
+    .svg-bridge { fill: var(--bridge); stroke: var(--muted); stroke-width: 2; }
+    .svg-via { fill: var(--accent2); opacity: .86; }
+    .svg-signal { stroke: var(--accent); stroke-width: 4; fill: none; stroke-linecap: round; }
+    .svg-power { stroke: var(--good); stroke-width: 4; fill: none; stroke-linecap: round; }
+    .table-wrap { overflow-x: auto; }
+    th, td { border-bottom: 1px solid var(--line); padding: .85rem; text-align: left; vertical-align: top; }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <div class="fixed top-4 right-4 z-50 flex gap-2 no-print">
+    <button id="theme-toggle" class="px-3 py-1.5 rounded-md border text-sm backdrop-blur" aria-label="切換深色模式">☼ / ☾</button>
+    <button onclick="window.print()" class="px-3 py-1.5 rounded-md border text-sm backdrop-blur">列印</button>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-5 py-10 lg:grid lg:grid-cols-[230px_minmax(0,1fr)] lg:gap-10">
+    <nav class="toc lg:sticky lg:top-10 self-start text-sm mb-8 lg:mb-0 no-print card p-5">
+      <div class="kicker mb-3">Contents</div>
+      <a href="#headline">一句話結論</a>
+      <a href="#diagram">結構差異</a>
+      <a href="#why">為什麼有效</a>
+      <a href="#comparison">技術比較</a>
+      <a href="#metrics">指標解讀</a>
+      <a href="#industry">產業意義</a>
+      <a href="#risks">盲點</a>
+      <a href="#source">來源</a>
+    </nav>
+
+    <main class="min-w-0">
+      <header class="mb-8 card p-7 md:p-10">
+        <p class="kicker mb-3">Advanced Packaging • 2026-05-26</p>
+        <h1 class="text-3xl md:text-5xl font-black tracking-tight leading-tight mb-4">EMIB 與 EMIB-T：Intel 先進封裝的水平互連與垂直供電升級</h1>
+        <p class="text-lg md:text-xl muted">EMIB 解決 XPU 與 HBM 之間的高速水平互連；EMIB-T 進一步把垂直供電與接地路徑整合進橋接區，目標是頻寬翻倍並降低電源雜訊。</p>
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="pill">EMIB</span><span class="pill">EMIB-T</span><span class="pill">先進封裝（Advanced Packaging）</span><span class="pill">HBM</span><span class="pill">XPU</span><span class="pill">電源完整性（Power Integrity）</span>
+        </div>
+      </header>
+
+      <section id="headline" class="mb-8 card p-7">
+        <h2 class="text-2xl font-bold mb-4">一句話結論</h2>
+        <div class="grid md:grid-cols-3 gap-4">
+          <div class="metric card p-5">
+            <h3 class="font-bold mb-2">EMIB 是局部矽橋</h3>
+            <p class="text-sm leading-7 muted">只在晶粒需要高速連接的位置埋入小型矽橋，避免整片矽中介層的成本與尺寸壓力。</p>
+          </div>
+          <div class="metric good card p-5">
+            <h3 class="font-bold mb-2">EMIB-T 加強供電</h3>
+            <p class="text-sm leading-7 muted">除了水平訊號橋，也讓電源與接地有更直接的垂直通道，降低供電阻抗與雜訊。</p>
+          </div>
+          <div class="metric risk card p-5">
+            <h3 class="font-bold mb-2">重點是封裝系統能力</h3>
+            <p class="text-sm leading-7 muted">AI 晶片瓶頸正在從單顆晶片算力，轉向 HBM 頻寬、供電完整性與封裝良率。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="diagram" class="mb-8 card p-7">
+        <h2 class="text-2xl font-bold mb-4">結構差異：從高速橋，到高速橋加垂直供電</h2>
+        <div class="grid lg:grid-cols-2 gap-6 diagram">
+          <div class="card p-5">
+            <h3 class="font-bold mb-3">EMIB：局部水平互連橋</h3>
+            <svg viewBox="0 0 520 310" role="img" aria-label="EMIB 結構示意圖">
+              <rect x="50" y="45" width="170" height="70" rx="10" class="svg-chip"></rect>
+              <rect x="300" y="45" width="170" height="70" rx="10" class="svg-chip"></rect>
+              <text x="135" y="85" text-anchor="middle" class="svg-text">XPU</text>
+              <text x="385" y="85" text-anchor="middle" class="svg-text">HBM</text>
+              <rect x="55" y="185" width="410" height="70" rx="12" class="svg-substrate"></rect>
+              <text x="260" y="226" text-anchor="middle" class="svg-muted">封裝基板</text>
+              <rect x="190" y="145" width="140" height="52" rx="8" class="svg-bridge"></rect>
+              <text x="260" y="176" text-anchor="middle" class="svg-text">EMIB 矽橋</text>
+              <path d="M135 115 C150 142, 190 142, 205 145" class="svg-signal"></path>
+              <path d="M385 115 C370 142, 330 142, 315 145" class="svg-signal"></path>
+              <path d="M210 170 L310 170" class="svg-signal"></path>
+              <text x="260" y="285" text-anchor="middle" class="svg-muted">重點：晶粒之間的高密度水平訊號連接</text>
+            </svg>
+          </div>
+          <div class="card p-5">
+            <h3 class="font-bold mb-3">EMIB-T：水平互連加垂直供電</h3>
+            <svg viewBox="0 0 520 310" role="img" aria-label="EMIB-T 結構示意圖">
+              <rect x="50" y="45" width="170" height="70" rx="10" class="svg-chip"></rect>
+              <rect x="300" y="45" width="170" height="70" rx="10" class="svg-chip"></rect>
+              <text x="135" y="85" text-anchor="middle" class="svg-text">XPU</text>
+              <text x="385" y="85" text-anchor="middle" class="svg-text">HBM</text>
+              <rect x="55" y="185" width="410" height="70" rx="12" class="svg-substrate"></rect>
+              <text x="260" y="226" text-anchor="middle" class="svg-muted">封裝基板</text>
+              <rect x="170" y="138" width="180" height="62" rx="8" class="svg-bridge"></rect>
+              <text x="260" y="174" text-anchor="middle" class="svg-text">EMIB-T</text>
+              <path d="M135 115 C155 140, 190 140, 205 148" class="svg-signal"></path>
+              <path d="M385 115 C365 140, 330 140, 315 148" class="svg-signal"></path>
+              <path d="M205 170 L315 170" class="svg-signal"></path>
+              <rect x="218" y="115" width="14" height="86" rx="5" class="svg-via"></rect>
+              <rect x="254" y="115" width="14" height="86" rx="5" class="svg-via"></rect>
+              <rect x="290" y="115" width="14" height="86" rx="5" class="svg-via"></rect>
+              <path d="M225 248 L225 205" class="svg-power"></path>
+              <path d="M261 248 L261 205" class="svg-power"></path>
+              <path d="M297 248 L297 205" class="svg-power"></path>
+              <text x="260" y="285" text-anchor="middle" class="svg-muted">重點：高速訊號與更直接的供電/接地路徑並存</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="mb-8 card p-7">
+        <h2 class="text-2xl font-bold mb-4">為什麼 EMIB-T 有用</h2>
+        <div class="grid lg:grid-cols-[1.05fr_.95fr] gap-6 items-start">
+          <div class="space-y-4 leading-8">
+            <p>EMIB 的核心價值，是用局部矽橋提供比有機基板更高密度的微細線路，讓 XPU 與 HBM 之間能承載大量平行 I/O。</p>
+            <p>但當 HBM 頻寬與 XPU 功耗一起上升，封裝內部問題會從「線夠不夠多」延伸到「電源與接地夠不夠穩」。大量 I/O 同時切換時，若回流路徑與供電路徑不佳，就會拉高電源雜訊。</p>
+            <p>EMIB-T 的升級方向，是在橋接區保留高密度水平訊號，同時給供電與接地更短、更直接的垂直通道。結果是更低阻抗的供電網路、更乾淨的 reference path，以及更高可用頻寬。</p>
+          </div>
+          <div class="card p-5">
+            <h3 class="font-bold mb-3">圖片宣稱的改善幅度</h3>
+            <div class="chart-wrap"><canvas id="claimChart"></canvas></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="comparison" class="mb-8 card p-7">
+        <h2 class="text-2xl font-bold mb-4">技術比較</h2>
+        <div class="table-wrap">
+          <table class="w-full text-sm">
+            <thead><tr><th>封裝路線</th><th>核心做法</th><th>優勢</th><th>代價或限制</th><th>適合場景</th></tr></thead>
+            <tbody>
+              <tr><td class="font-semibold">有機基板</td><td>晶粒透過封裝基板走線互連</td><td>成本較低、成熟度高</td><td>線寬與線距限制，高頻寬密度較低</td><td>一般多晶粒封裝</td></tr>
+              <tr><td class="font-semibold">EMIB</td><td>局部埋入矽橋，連接相鄰晶粒</td><td>比全矽中介層便宜，仍有高密度互連</td><td>供電與接地路徑可能被橋接區擠壓</td><td>XPU 與 HBM 局部高速互連</td></tr>
+              <tr><td class="font-semibold">EMIB-T</td><td>矽橋結合更好的垂直導通與供電/接地結構</td><td>提升頻寬，降低電源雜訊</td><td>製程與封裝整合更複雜，量產良率需驗證</td><td>高功耗 AI 加速器與高頻寬 HBM 封裝</td></tr>
+              <tr><td class="font-semibold">矽中介層</td><td>整片矽中介層承載多晶粒互連</td><td>互連密度高、路由彈性強</td><td>成本高、尺寸與良率壓力大</td><td>大型 AI GPU、HBM 密集封裝</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="metrics" class="mb-8 card p-7">
+        <h2 class="text-2xl font-bold mb-4">指標解讀：頻寬翻倍不等於整機效能翻倍</h2>
+        <div class="grid md:grid-cols-2 gap-5">
+          <div class="card p-5">
+            <h3 class="font-bold mb-2">Bandwidth ↑ ≥ 100%</h3>
+            <p class="leading-8 muted">代表 XPU 與 HBM 間的封裝互連能力有機會至少翻倍。對 AI 訓練與推論很重要，因為模型常被記憶體頻寬與資料搬移限制。</p>
+          </div>
+          <div class="card p-5">
+            <h3 class="font-bold mb-2">Power noise ↓ 50%</h3>
+            <p class="leading-8 muted">代表供電網路上瞬間電壓波動降低。對高功耗晶片很重要，因為電源雜訊會影響穩定性、時脈餘裕與 I/O 訊號品質。</p>
+          </div>
+        </div>
+        <details class="mt-5 card p-5">
+          <summary class="font-bold">Power noise 可以怎麼理解</summary>
+          <p class="mt-3 leading-8 muted">當 XPU 與 HBM 之間大量 I/O 同時切換，電流會瞬間拉高。若供電與接地路徑阻抗太高，就會產生 IR drop、ground bounce 或 simultaneous switching noise。EMIB-T 的垂直通道讓電流路徑更短，降低這類波動。</p>
+        </details>
+      </section>
+
+      <section id="industry" class="mb-8 card p-7">
+        <h2 class="text-2xl font-bold mb-4">產業意義：先進封裝正在變成 AI 晶片主戰場</h2>
+        <div class="grid lg:grid-cols-[.9fr_1.1fr] gap-6 items-start">
+          <div class="mini-chart"><canvas id="priorityChart"></canvas></div>
+          <div class="leading-8 space-y-4">
+            <p>AI 加速器的競爭已經不只看 XPU 裡的運算單元。HBM 放得近不近、線夠不夠密、供電穩不穩、散熱壓不壓得住，都會影響實際可用效能。</p>
+            <p>台積電（TSMC）CoWoS 用完整矽中介層打高階 AI GPU 主流路線；Intel 則以 EMIB、Foveros、EMIB-T 等封裝組合，嘗試用更模組化的方式處理晶粒整合。</p>
+            <p>EMIB-T 的戰略價值，是在成本、頻寬、供電與封裝彈性之間找平衡。若量產成熟，它可成為 Intel 對抗高階矽中介層路線的重要工具。</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="risks" class="mb-8 card p-7">
+        <h2 class="text-2xl font-bold mb-4">盲點與驗證重點</h2>
+        <ol class="list-decimal pl-6 space-y-3 leading-8">
+          <li><strong>宣稱值條件：</strong>頻寬提升與電源雜訊下降要看測試條件、封裝尺寸、HBM 數量與功耗設定。</li>
+          <li><strong>系統效能：</strong>封裝頻寬翻倍不代表 AI 晶片效能翻倍，還要看記憶體控制器、軟體堆疊與模型工作負載。</li>
+          <li><strong>良率與成本：</strong>更複雜的橋接與垂直導通結構，可能提高封裝良率與測試挑戰。</li>
+          <li><strong>散熱耦合：</strong>供電更穩不等於散熱問題消失；高 HBM 數量與高 XPU 功耗仍會推高熱設計壓力。</li>
+          <li><strong>供應鏈成熟度：</strong>真正關鍵是能不能穩定量產，而不只是技術簡報上的結構優勢。</li>
+        </ol>
+      </section>
+
+      <section id="source" class="mb-8 card p-7">
+        <h2 class="text-2xl font-bold mb-4">來源</h2>
+        <p class="leading-8 muted">來源：使用者提供的 Intel EMIB / EMIB-T 技術截圖。圖中主張包含 EMIB-T 可帶來 Bandwidth ↑ ≥ 100% 與 Power noise ↓ 50%。本報告為封裝工程概念解讀，非 Intel 官方規格書逐字轉述。</p>
+      </section>
+
+      <footer class="mt-12 mb-8 text-sm muted">本頁聚焦半導體封裝（Semiconductor Packaging）、高頻寬記憶體（High Bandwidth Memory, HBM）與電源完整性（Power Integrity, PI）概念，後續仍需以 Intel 正式技術文件、產品規格與量產資料交叉驗證。</footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const dark = document.documentElement.classList.toggle('dark');
+      localStorage.theme = dark ? 'dark' : 'light';
+      redrawCharts();
+    });
+
+    const css = (name) => getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    let charts = [];
+    function colors() { return { ink: css('--ink'), muted: css('--muted'), line: css('--line'), accent: css('--accent'), accent2: css('--accent2'), good: css('--good'), risk: css('--risk') }; }
+    function baseOptions(title) {
+      const c = colors();
+      return { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { color: c.muted } }, title: { display: true, text: title, color: c.ink, font: { size: 15, weight: 'bold' } } }, scales: { x: { ticks: { color: c.muted }, grid: { color: c.line } }, y: { ticks: { color: c.muted }, grid: { color: c.line } } } };
+    }
+    function drawCharts() {
+      const c = colors();
+      charts.push(new Chart(document.getElementById('claimChart'), { type: 'bar', data: { labels: ['互連頻寬', '電源雜訊'], datasets: [{ label: '改善幅度', data: [100, 50], backgroundColor: [c.accent, c.good] }] }, options: baseOptions('EMIB-T 相對 EMIB 的宣稱改善') }));
+      charts.push(new Chart(document.getElementById('priorityChart'), { type: 'radar', data: { labels: ['頻寬密度', '供電穩定', '成本彈性', '封裝難度', '散熱壓力'], datasets: [{ label: 'EMIB', data: [70, 55, 78, 58, 55], borderColor: c.accent, backgroundColor: 'rgba(37,99,235,.18)' }, { label: 'EMIB-T', data: [90, 82, 68, 74, 68], borderColor: c.good, backgroundColor: 'rgba(5,150,105,.18)' }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { color: c.muted } }, title: { display: true, text: '封裝能力取向比較（概念化）', color: c.ink, font: { size: 15, weight: 'bold' } } }, scales: { r: { pointLabels: { color: c.muted }, grid: { color: c.line }, angleLines: { color: c.line }, ticks: { display: false } } } } }));
+    }
+    function redrawCharts() { charts.forEach(ch => ch.destroy()); charts = []; drawCharts(); }
+    drawCharts();
+
+    const tocLinks = document.querySelectorAll('.toc a');
+    const sections = [...tocLinks].map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+    const onScroll = () => {
+      const y = window.scrollY + 120;
+      let active = sections[0];
+      for (const s of sections) if (s.offsetTop <= y) active = s;
+      tocLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + active.id));
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+</body>
+</html>
