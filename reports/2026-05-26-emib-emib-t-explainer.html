@@ -46,6 +46,8 @@
     .svg-signal { stroke: var(--accent); stroke-width: 4; fill: none; stroke-linecap: round; }
     .svg-power { stroke: var(--good); stroke-width: 4; fill: none; stroke-linecap: round; }
     .table-wrap { overflow-x: auto; }
+    .source-image { width: 100%; border-radius: 1rem; border: 1px solid var(--line); box-shadow: 0 12px 34px rgba(15, 23, 42, .10); }
+    .note { border-left: 4px solid var(--accent); background: color-mix(in srgb, var(--chip) 36%, transparent); }
     th, td { border-bottom: 1px solid var(--line); padding: .85rem; text-align: left; vertical-align: top; }
   </style>
 </head>
@@ -98,6 +100,7 @@
 
       <section id="diagram" class="mb-8 card p-7">
         <h2 class="text-2xl font-bold mb-4">結構差異：從高速橋，到高速橋加垂直供電</h2>
+        <div class="note p-4 rounded-xl mb-5 leading-7 muted">這裡的圖是概念示意，不是 Intel 實際剖面規格圖。EMIB-T 的重點應理解為「在橋接區附近加入更直接的垂直供電/接地導通路徑，讓高速訊號與供電回流路徑共存」，不代表紫色柱狀結構一定就是實物長相或精確位置。</div>
         <div class="grid lg:grid-cols-2 gap-6 diagram">
           <div class="card p-5">
             <h3 class="font-bold mb-3">EMIB：局部水平互連橋</h3>
@@ -127,6 +130,7 @@
               <text x="260" y="226" text-anchor="middle" class="svg-muted">封裝基板</text>
               <rect x="170" y="138" width="180" height="62" rx="8" class="svg-bridge"></rect>
               <text x="260" y="174" text-anchor="middle" class="svg-text">EMIB-T</text>
+              <text x="260" y="132" text-anchor="middle" class="svg-muted">垂直供電/接地通道示意</text>
               <path d="M135 115 C155 140, 190 140, 205 148" class="svg-signal"></path>
               <path d="M385 115 C365 140, 330 140, 315 148" class="svg-signal"></path>
               <path d="M205 170 L315 170" class="svg-signal"></path>
@@ -136,7 +140,7 @@
               <path d="M225 248 L225 205" class="svg-power"></path>
               <path d="M261 248 L261 205" class="svg-power"></path>
               <path d="M297 248 L297 205" class="svg-power"></path>
-              <text x="260" y="285" text-anchor="middle" class="svg-muted">重點：高速訊號與更直接的供電/接地路徑並存</text>
+              <text x="260" y="285" text-anchor="middle" class="svg-muted">重點：高速訊號、供電與回流路徑在橋接區協同設計</text>
             </svg>
           </div>
         </div>
@@ -215,7 +219,11 @@
 
       <section id="source" class="mb-8 card p-7">
         <h2 class="text-2xl font-bold mb-4">來源</h2>
-        <p class="leading-8 muted">來源：使用者提供的 Intel EMIB / EMIB-T 技術截圖。圖中主張包含 EMIB-T 可帶來 Bandwidth ↑ ≥ 100% 與 Power noise ↓ 50%。本報告為封裝工程概念解讀，非 Intel 官方規格書逐字轉述。</p>
+        <figure class="mb-5">
+          <img class="source-image" src="assets/2026-05-26-emib-emib-t-intel-source.jpg" alt="Intel EMIB 與 EMIB-T 技術截圖，顯示 EMIB-T 相較 EMIB 的頻寬提升與電源雜訊降低">
+          <figcaption class="text-sm muted mt-3">使用者提供的 Intel EMIB / EMIB-T 技術截圖。圖中主張包含 EMIB-T 可帶來 Bandwidth ↑ ≥ 100% 與 Power noise ↓ 50%。</figcaption>
+        </figure>
+        <p class="leading-8 muted">本報告為封裝工程概念解讀，非 Intel 官方規格書逐字轉述。內文中的結構圖為輔助理解的抽象示意，應以原始圖與 Intel 正式技術文件作為最終依據。</p>
       </section>
 
       <footer class="mt-12 mb-8 text-sm muted">本頁聚焦半導體封裝（Semiconductor Packaging）、高頻寬記憶體（High Bandwidth Memory, HBM）與電源完整性（Power Integrity, PI）概念，後續仍需以 Intel 正式技術文件、產品規格與量產資料交叉驗證。</footer>
