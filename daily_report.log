@@ -564,3 +564,29 @@ I will search for the tabs layout in [generate_report_34.py](file:///Users/wisdo
 I will view lines 345 to 490 in [generate_report_34.py](file:///Users/wisdom/html-report-skill/generate_report_34.py) to check the tabs styling and content organization.
 I will now create the HTML report directly for June 8, 2026, incorporating all the required sections, sortable S&P 500 sectors table, CME FedWatch tabs, dynamic Chart.js index returns, and detailed news for Big Tech and semiconductor stocks like Intel and Tesla. I will save it to [2026-06-08-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-06-08-us-stock-closing-daily-report.html).
 I will now run the `publish.py` script to update the manifest file, perform the Git commit, and push the changes to your remote repository so that the new report is published on GitHub Pages.
+我已成功讀取並執行 [daily_report_prompt.md](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 中的指令與格式，使用最新網路資料生成並發布了 2026-06-08 的美股收盤日報。
+
+### 成果與發布連結
+
+1. **HTML 報告檔案**：[reports/2026-06-08-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-06-08-us-stock-closing-daily-report.html) 已成功建立。
+2. **清單更新**：已自動更新 [reports/manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json)，將新報告註冊至首頁索引中。
+3. **Git 提交與推送**：成功完成 Git commit 並推送到您的遠端儲存庫，GitHub Pages 的公開發布 URL 為：
+   👉 **[美股收盤日報｜2026-06-08](https://wisdom925.github.io/html-report-skill/reports/2026-06-08-us-stock-closing-daily-report.html)**
+
+---
+
+### 日報重點摘要 (2026-06-08)
+
+* **今日大盤**：大盤在上週五非農大跌後迎來反彈。**S&P 500** 漲 0.30%，**納斯達克** 漲 0.86%，**費半** 飆升 5.61%。然而，**道瓊** 受到價值與防禦板塊撤出的拖累微跌 0.16%。
+* **核心利多**：
+  * **英特爾 (INTC)**：獲得 Google 2028 年超 300 萬顆自研 TPU 晶片代工大單（採用英特爾 18A 製程），股價爆發**暴漲 11.20%**，寫下 IFS 業務重要里程碑。
+  * **特斯拉 (TSLA)**：獲摩根大通（JPMorgan）上調評級至中性，受惠於自動駕駛 FSD 在中國市場的推進及儲能出貨利多，股價**飆升 4.59%** 重返 $400 大關上方。
+* **宏觀債市**：10年期美債收益率高位維持在 **4.55%** 企穩；但 30年期美債收益率飆升至 **5.03%**，收益率長端陡峭化反映了市場對未來發債規模與通膨黏性的擔憂。
+* **板塊輪動**：資金顯著從前一日防守的必需消費（XLP）、公用事業（XLU）與金融（XLF）中抽離，重回半導體（XLK/SMH）等 AI 硬體主線。
+* **互動設計**：報告中包含 **Chart.js** 產出的動態指數對比柱狀圖、**Mermaid** 日內運作邏輯流程圖、**CSS Tabs** 宏觀環境多視角切換、以及支援 Vanilla JS 排序與搜尋篩選的 **11 大板塊表格**。
+No report artifact changes to commit.
+===== 2026-06-09 08:03:39 +0800 daily_us_market_report end =====
+===== 2026-06-10 08:00:37 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
