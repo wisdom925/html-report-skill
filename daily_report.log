@@ -649,3 +649,88 @@ I will view lines 480 to 600 of `generate_report_35.py` to see the sector perfor
 I will create and write the `generate_report_36.py` script. This script will programmatically generate the full HTML report for June 10, 2026, and save it under the `reports/` folder, then update `manifest.json`.
 I will run the python script to generate the HTML report and update the manifest list.
 I will run the `publish.py` script to complete the publishing process (adding, committing, and pushing the new report to git).
+I will view the end of `daily_report.log` to check the format used for logging daily report publications.
+I will view the `reports/manifest.json` file to confirm that the new report entry is correctly registered at the top of the list.
+我已讀取並執行了 [daily_report_prompt.md](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 中的指令與格式，使用最新網絡數據生成並發布了最新一期美股收盤日報（**2026-06-10**）。
+
+### 成果與發布連結
+- **生成腳本**：已建立 [generate_report_36.py](file:///Users/wisdom/html-report-skill/generate_report_36.py)。
+- **HTML 報告**：成功產出 [reports/2026-06-10-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-06-10-us-stock-closing-daily-report.html)。
+- **索引更新**：成功更新 [reports/manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json)，將新報告置於頂部。
+- **發布推送**：調用 `publish.py` 將修改直接 Commit 併推送至遠端 `html-report-skill` 倉庫，報告公開 URL 為：
+  👉 **[美股收盤日報｜2026-06-10 互動報告連結](https://wisdom925.github.io/html-report-skill/reports/2026-06-10-us-stock-closing-daily-report.html)**
+
+---
+
+### 2026-06-10 美股收盤要點摘要
+
+1. **大盤全線重挫**：
+   - **道瓊工業指數**：49,918.78（**-953.33 / -1.87%**），受工業板塊（XLI -3.38%）大跌拖累。
+   - **S&P 500 指數**：7,266.99（**-119.66 / -1.62%**），跌破 20MA。
+   - **納斯達克綜合指數**：25,169.50（**-509.32 / -1.98%**），面臨中期下行回調壓力。
+   - **VIX 恐慌指數**：22.22（**+21.02%**），自低位急劇飆升。
+
+2. **核心市場驅動因素**：
+   - **CPI 通膨大反彈**：美國 5 月 CPI 同比年增飆升至 **4.2%**，創三年新高；月增 0.5%，顯示通膨黏性強勁，導致聯準會降息預期徹底冰封，債市收益率暴漲（30年期美債突破 5.03%）。
+   - **中東局勢驟緊與油價飆升**：美伊兩國在波斯灣爆發衝突（美軍發動自衛式襲擊），原油供應恐慌使 WTI 原油暴漲至 **$88.22**，Brent 突破 **$93.00**，促使資金湧入 XLE 能源板塊避險。
+   - **SMCI 稀釋融資利空**：Super Micro Computer (SMCI) 宣佈 $70 億美元的股權和債券增發計劃，引爆 AI 硬體板塊稀釋恐慌。SMCI 終場暴跌 **-27.98%** 收於 $27.98，拖累費半（SOX）大跌 2.37%。
+   - **甲骨文 (ORCL) 財報**：盤後公佈 Q4 業績超預期，但大額 Capex（預計 FY27 高達 $700 億）引發淨利潤率與進一步融資稀釋擔憂，盤後跌逾 2.5%。
+
+3. **網頁互動設計**：
+   - 配置了符合深/淺色模式變化的 **Chart.js** 指數漲跌對比柱狀圖。
+   - 繪製了 **Mermaid 流程圖** 來描述當天「CPI通膨爆表 ➔ 美債收益率飆升 ➔ SMCI稀釋增發 ➔ 晶片去槓桿踩踏 ➔ 資金防守避險」的運作邏輯。
+   - 實現了支援 Vanilla JS 即時搜尋與排序的 **S&P 500 11大板塊互動表格**。
+   - 利用 `<details>` 收合分組呈現巨頭、半導體與軟體等板塊的重點異動分析。
+No report artifact changes to commit.
+===== 2026-06-11 08:03:49 +0800 daily_us_market_report end =====
+===== 2026-06-12 08:00:52 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+I'll start by listing the contents of the workspace directory to locate `daily_report_prompt.md` and understand the structure of the repository.
+I will read the contents of [daily_report_prompt.md](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) to understand the requirements for the US Stock Market Daily Report.
+I'll view the beginning of the python script [generate_report_36.py](file:///Users/wisdom/html-report-skill/generate_report_36.py) to check how reports are generated and where the generated report is stored.
+I'll view the end of `generate_report_36.py` to see where the output HTML is saved or if there is any script that runs it.
+I will view the `manifest.json` file inside the `reports` directory to check the existing daily reports and understand the recent dates of reports generated.
+I'll search for the US stock market summary and data for June 11, 2026, to gather the latest information for generating our daily report.
+I'll search for specific treasury yields, VIX, SOX, and commodity/crypto prices for June 11, 2026, to ensure our report is data-driven.
+I will search for commodity and cryptocurrency prices (WTI, Brent, Gold, Bitcoin, Ethereum) for June 11, 2026.
+I'll read lines 150 to 500 of [generate_report_36.py](file:///Users/wisdom/html-report-skill/generate_report_36.py) to check the formatting of the HTML components, particularly the layout, styles, charts, timeline, tabs, and tables.
+I will read lines 500 to 900 of [generate_report_36.py](file:///Users/wisdom/html-report-skill/generate_report_36.py) to check the formatting of sections 5 through 8.
+I'll list the files inside the `reports` subdirectory to see what files are already there.
+I will check [index.html](file:///Users/wisdom/html-report-skill/index.html) to see how it reads or displays the generated reports.
+I will search for the specific daily performance (returns) of the S&P 500 sectors (represented by ETFs like XLK, XLF, XLE, XLY, XLP, XLV, XLI, XLB, XLRE, XLU, XLC) on June 11, 2026.
+I will verify the stock market closing values for June 11, 2026, to resolve the discrepancy between the search results.
+I will search for the closing prices and percentage changes for the Russell 2000, SOX (Philadelphia Semiconductor Index), and VIX on June 11, 2026.
+I will run a search to verify the exact closing value and percentage change of the VIX Index on June 11, 2026.
+I will search for the closing prices and percentage changes for the key tech companies (NVDA, AAPL, MSFT, GOOGL, TSLA, AMZN, META) on June 11, 2026, to provide detailed stock movements.
+I will search for the daily performance of major sector ETFs (such as XLE, XLK, XLF, XLP, XLV, XLY, XLI, XLU, XLC, XLRE, XLB) on June 11, 2026.
+I will search for the specific daily price and return of the XLK (Technology Select Sector SPDR Fund) and SMH (VanEck Semiconductor ETF) on June 11, 2026.
+I will search for the closing prices of the remaining sector ETFs (XLE, XLF, XLP, XLV, XLI, XLY, XLRE, XLU, XLC) on June 11, 2026.
+I will run a specific search to obtain the closing prices and daily percentage changes of XLE, XLF, XLP, XLV, XLY, XLC, XLRE on June 11, 2026.
+I will search for the closing prices and daily percentage returns of XLI (Industrial) and XLB (Materials) Select Sector SPDR ETFs on June 11, 2026.
+I will search for the daily close and performance of the XLB (Materials Select Sector) ETF on June 11, 2026.
+I will search for the daily percentage change and return of the XLU (Utilities Select Sector) ETF on June 11, 2026.
+I will search for the closing prices and daily percentage returns of SPY and QQQ on June 11, 2026, to calculate the correct index performances.
+I will search for the closing value of the Nasdaq 100 index itself on June 11, 2026.
+I will search for the exact daily percentage change of the SOX (Philadelphia Semiconductor Index) on June 11, 2026, to resolve this discrepancy.
+I will search for NVDA stock return on June 11, 2026, to confirm if it was down or up, as chip stocks in general (SMH) surged.
+I will search for the closing prices of other major semiconductor stocks (AMD, AVGO, TSM, MRVL, MU) on June 11, 2026, to understand the sector's performance.
+I will search for the correct closing price of Micron Technology (MU) on June 11, 2026.
+I will search for previous closing prices or comments on Micron (MU) in the repo to make sure we have a consistent history.
+I'll search for "美光" or "Micron" in [generate_report_36.py](file:///Users/wisdom/html-report-skill/generate_report_36.py) to check if we have any reference to Micron on June 10.
+I'll search for "Micron" in [generate_report_35.py](file:///Users/wisdom/html-report-skill/generate_report_35.py) to check historical prices of Micron.
+I will search for the closing price of Micron Technology (MU) on June 10, 2026, to ensure that the trend makes sense.
+I will search for the closing price and percentage change of TSMC (TSM) on June 11, 2026, to ensure its direction is correct.
+I will search for the closing price of Super Micro Computer (SMCI) on June 11, 2026.
+I will search for the closing price of Oracle (ORCL) on June 11, 2026, following its Q4 earnings release and subsequent after-hours drop.
+I will search for the closing price of Adobe (ADBE) on June 11, 2026, and any after-hours reaction to its earnings.
+I will search to confirm if Adobe (ADBE) had a stock split in 2026 to explain the price change.
+I will search for Adobe's closing price on June 10, 2026, to verify its historical price trajectory.
+I will search for the closing price of Palantir (PLTR) on June 11, 2026.
+No report artifact changes to commit.
+===== 2026-06-12 08:02:49 +0800 daily_us_market_report end =====
+===== 2026-06-12 10:25:54 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
