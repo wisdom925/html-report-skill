@@ -769,3 +769,10 @@ Already up to date.
    * **Adobe (ADBE)** Q2 財報亮眼，營收與 EPS 雙雙 beat 預期並上調全年指引，然而與財報同日宣布 CFO Dan Durn 意外將於秋季離職，加劇管理層不確定性，導致盤後股價重挫約 **-5.5%** 至 $211.70。
 No report artifact changes to commit.
 ===== 2026-06-12 10:30:20 +0800 daily_us_market_report end =====
+===== 2026-06-12 10:33:11 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+reports/2026-06-11-us-stock-closing-daily-report.html already exists and is registered in manifest; skipping regeneration.
+No report artifact changes to commit.
+===== 2026-06-12 10:33:14 +0800 daily_us_market_report end =====
