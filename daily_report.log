@@ -734,3 +734,38 @@ No report artifact changes to commit.
 From github.com:wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+我已成功讀取並執行 [daily_report_prompt.md](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 中的指令與格式要求，針對 **2026-06-11** 美股交易日生成並發布了最新收盤日報。
+
+### 成果與發布連結
+* **生成腳本**：已在倉庫內建立 [generate_report_37.py](file:///Users/wisdom/html-report-skill/generate_report_37.py)。
+* **HTML 報告**：成功產出 [reports/2026-06-11-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-06-11-us-stock-closing-daily-report.html)。
+* **索引更新**：成功更新 [reports/manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json)，將新報告置於頂部。
+* **發布推送**：運行 `publish.py` 成功將修改 Commit 並 Push 至遠端 GitHub 倉庫。
+
+👉 **[美股收盤日報｜2026-06-11 互動報告連結](https://wisdom925.github.io/html-report-skill/reports/2026-06-11-us-stock-closing-daily-report.html)**
+
+---
+
+### 2026-06-11 美股交易日要點摘要
+
+1. **地緣政治風險劇烈降溫**：
+   * 川普總統在最後關頭決定取消針對伊朗的報復性空襲計劃，大幅緩解了市場前期對波斯灣石油供應中斷與滯脹的恐慌。
+   * **原油價格暴跌**：WTI 原油回吐漲幅跌至 **$90.44**，Brent 原油收於 **$92.00**。
+   * **債市買盤湧現**：10年期美債收益率從高位回落至 **4.46%** 上下，有效減輕了高估值成長股的折現壓力。
+
+2. **三大指數報復性大反彈**：
+   * **道瓊工業指數**：收 50,848.75（**+929.97 / +1.86%**），企穩並修復短期跌勢。
+   * **S&P 500 指數**：收 7,394.30（**+127.31 / +1.75%**），強勢收復 20MA。
+   * **納斯達克綜合指數**：收 25,809.66（**+640.16 / +2.54%**），反包前日大陰線。
+   * **VIX 恐慌指數**：暴跌至 **21.11**（**-5.00%**），恐慌情緒迅速降溫。
+
+3. **半導體板塊與小盤股強力軋空**：
+   * **費城半導體指數 (SOX)**：收盤狂飆 **7.91%**，去槓桿的踩踏行情迅速轉化為史詩級的空頭回補。
+   * **羅素 2000 指數**：大漲 **3.04%**，創兩個月最佳單日表現。
+   * **焦點個股**：美光 (**MU +11.7%**，宣布 HBM 產能售罄)、Marvell (**MRVL +11.10%**，機構評級上調) 領漲晶片股。特斯拉 (**TSLA +4.60%**，馬斯克透露薪酬案獲多數股東通過) 帶動消費板塊。
+   * **逆市下跌**：微軟 (**MSFT -1.77%**，反壟斷調查發酵)；甲骨文 (**ORCL -11.36%**，Capex 引導過高引發利潤率與債務融資稀釋憂慮)。
+
+4. **盤後重點財報 (Adobe)**：
+   * **Adobe (ADBE)** Q2 財報亮眼，營收與 EPS 雙雙 beat 預期並上調全年指引，然而與財報同日宣布 CFO Dan Durn 意外將於秋季離職，加劇管理層不確定性，導致盤後股價重挫約 **-5.5%** 至 $211.70。
+No report artifact changes to commit.
+===== 2026-06-12 10:30:20 +0800 daily_us_market_report end =====
