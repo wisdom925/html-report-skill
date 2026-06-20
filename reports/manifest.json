@@ -1,116 +1,122 @@
 [
   {
+    "file": "2026-06-19-us-stock-closing-daily-report.html",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-19",
+    "date": "2026-06-19",
+    "description": "\u7f8e\u80a1\u516d\u6708\u7bc0\u4f11\u5e02\uff1b\u672c\u9031\u8cbb\u534a\u5728 Apple-Intel \u6676\u7247\u5408\u4f5c\u53ca\u5730\u7de3\u7de9\u548c\u4e0b\u55ae\u9031\u66b4\u6f32\u903e13%\u5275\u9ad8\uff0c\u6a19\u666e\u91cd\u8fd47500\u9ede\u3002"
+  },
+  {
     "file": "2026-06-18-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-18",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-18",
     "date": "2026-06-18",
-    "description": "美伊敲定和平協議引油價大跌，Intel攜手Apple晶片代工合作引爆晶片狂潮！費半暴漲6.42%，標普重登7500點，三大指數強勢反彈，電力基建及液冷散熱持續改寫歷史新高。"
+    "description": "\u7f8e\u4f0a\u6572\u5b9a\u548c\u5e73\u5354\u8b70\u5f15\u6cb9\u50f9\u5927\u8dcc\uff0cIntel\u651c\u624bApple\u6676\u7247\u4ee3\u5de5\u5408\u4f5c\u5f15\u7206\u6676\u7247\u72c2\u6f6e\uff01\u8cbb\u534a\u66b4\u6f326.42%\uff0c\u6a19\u666e\u91cd\u767b7500\u9ede\uff0c\u4e09\u5927\u6307\u6578\u5f37\u52e2\u53cd\u5f48\uff0c\u96fb\u529b\u57fa\u5efa\u53ca\u6db2\u51b7\u6563\u71b1\u6301\u7e8c\u6539\u5beb\u6b77\u53f2\u65b0\u9ad8\u3002"
   },
   {
     "file": "2026-06-17-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-17",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-17",
     "date": "2026-06-17",
-    "description": "零售數據大超預期，FOMC決議鷹派點針圖引發升息預期，債券收益率飆升，道指下殺507點，標普跌1.21%與納指跌1.34%。然而半導體及AI電力逆風強勢，費半逆市升1.38%，QQQ漲0.93%，板塊極端結構分化。"
+    "description": "\u96f6\u552e\u6578\u64da\u5927\u8d85\u9810\u671f\uff0cFOMC\u6c7a\u8b70\u9df9\u6d3e\u9ede\u91dd\u5716\u5f15\u767c\u5347\u606f\u9810\u671f\uff0c\u50b5\u5238\u6536\u76ca\u7387\u98c6\u5347\uff0c\u9053\u6307\u4e0b\u6bba507\u9ede\uff0c\u6a19\u666e\u8dcc1.21%\u8207\u7d0d\u6307\u8dcc1.34%\u3002\u7136\u800c\u534a\u5c0e\u9ad4\u53caAI\u96fb\u529b\u9006\u98a8\u5f37\u52e2\uff0c\u8cbb\u534a\u9006\u5e02\u53471.38%\uff0cQQQ\u6f320.93%\uff0c\u677f\u584a\u6975\u7aef\u7d50\u69cb\u5206\u5316\u3002"
   },
   {
     "file": "2026-06-16-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-16",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-16",
     "date": "2026-06-16",
-    "description": "美股三大指數走勢分化，科技及晶片板塊高位獲利回吐拖累標普與納指走軟；美伊談判框架順利推進，油價大跌跌破$80關口，降低通膨焦慮，刺激資金良性輪動入金融與工業，道指收漲0.64%再創歷史新高。"
+    "description": "\u7f8e\u80a1\u4e09\u5927\u6307\u6578\u8d70\u52e2\u5206\u5316\uff0c\u79d1\u6280\u53ca\u6676\u7247\u677f\u584a\u9ad8\u4f4d\u7372\u5229\u56de\u5410\u62d6\u7d2f\u6a19\u666e\u8207\u7d0d\u6307\u8d70\u8edf\uff1b\u7f8e\u4f0a\u8ac7\u5224\u6846\u67b6\u9806\u5229\u63a8\u9032\uff0c\u6cb9\u50f9\u5927\u8dcc\u8dcc\u7834$80\u95dc\u53e3\uff0c\u964d\u4f4e\u901a\u81a8\u7126\u616e\uff0c\u523a\u6fc0\u8cc7\u91d1\u826f\u6027\u8f2a\u52d5\u5165\u91d1\u878d\u8207\u5de5\u696d\uff0c\u9053\u6307\u6536\u6f320.64%\u518d\u5275\u6b77\u53f2\u65b0\u9ad8\u3002"
   },
   {
     "file": "2026-06-15-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-15",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-15",
     "date": "2026-06-15",
-    "description": "美伊達成框架和平協定推動地緣局勢顯著緩和，原油大瀉近5%至$83/桶，通膨與利率壓力解除。美股三大指數大爆發，費半飆漲5.10%創歷史新高，標普500與道指齊創歷史新高，納指狂漲3.07%。"
+    "description": "\u7f8e\u4f0a\u9054\u6210\u6846\u67b6\u548c\u5e73\u5354\u5b9a\u63a8\u52d5\u5730\u7de3\u5c40\u52e2\u986f\u8457\u7de9\u548c\uff0c\u539f\u6cb9\u5927\u7009\u8fd15%\u81f3$83/\u6876\uff0c\u901a\u81a8\u8207\u5229\u7387\u58d3\u529b\u89e3\u9664\u3002\u7f8e\u80a1\u4e09\u5927\u6307\u6578\u5927\u7206\u767c\uff0c\u8cbb\u534a\u98c6\u6f325.10%\u5275\u6b77\u53f2\u65b0\u9ad8\uff0c\u6a19\u666e500\u8207\u9053\u6307\u9f4a\u5275\u6b77\u53f2\u65b0\u9ad8\uff0c\u7d0d\u6307\u72c2\u6f323.07%\u3002"
   },
   {
     "file": "2026-06-12-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-12",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-12",
     "date": "2026-06-12",
-    "description": "SpaceX歷史性IPO首日暴漲近20%推動高成長股氣氛，美伊外交談判突破油價暴跌逾6%，三大指數收高，標普500再創歷史新高。"
+    "description": "SpaceX\u6b77\u53f2\u6027IPO\u9996\u65e5\u66b4\u6f32\u8fd120%\u63a8\u52d5\u9ad8\u6210\u9577\u80a1\u6c23\u6c1b\uff0c\u7f8e\u4f0a\u5916\u4ea4\u8ac7\u5224\u7a81\u7834\u6cb9\u50f9\u66b4\u8dcc\u903e6%\uff0c\u4e09\u5927\u6307\u6578\u6536\u9ad8\uff0c\u6a19\u666e500\u518d\u5275\u6b77\u53f2\u65b0\u9ad8\u3002"
   },
   {
     "file": "2026-06-11-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-11",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-11",
     "date": "2026-06-11",
-    "description": "川普取消空襲伊朗計劃推動地緣政治局勢顯著緩和，美債收益率與油價自高位回落。羅素2000暴漲3%創兩個月最佳表現，費半狂飆7.91%，美光大漲11.7%領漲晶片股。"
+    "description": "\u5ddd\u666e\u53d6\u6d88\u7a7a\u8972\u4f0a\u6717\u8a08\u5283\u63a8\u52d5\u5730\u7de3\u653f\u6cbb\u5c40\u52e2\u986f\u8457\u7de9\u548c\uff0c\u7f8e\u50b5\u6536\u76ca\u7387\u8207\u6cb9\u50f9\u81ea\u9ad8\u4f4d\u56de\u843d\u3002\u7f85\u7d202000\u66b4\u6f323%\u5275\u5169\u500b\u6708\u6700\u4f73\u8868\u73fe\uff0c\u8cbb\u534a\u72c2\u98c67.91%\uff0c\u7f8e\u5149\u5927\u6f3211.7%\u9818\u6f32\u6676\u7247\u80a1\u3002"
   },
   {
     "file": "2026-06-10-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-10",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-10",
     "date": "2026-06-10",
-    "description": "美國5月CPI通膨飆升至4.2%創三年新高，美伊中東局勢驟緊油價大漲，聯準會降息預期歸零。SMCI宣佈70億美元股權融資計劃大跌28%，引爆晶片股去槓桿踩踏。納指重挫近2%，道指暴跌953點，VIX恐慌指數暴漲21%破22。"
+    "description": "\u7f8e\u570b5\u6708CPI\u901a\u81a8\u98c6\u5347\u81f34.2%\u5275\u4e09\u5e74\u65b0\u9ad8\uff0c\u7f8e\u4f0a\u4e2d\u6771\u5c40\u52e2\u9a5f\u7dca\u6cb9\u50f9\u5927\u6f32\uff0c\u806f\u6e96\u6703\u964d\u606f\u9810\u671f\u6b78\u96f6\u3002SMCI\u5ba3\u4f4870\u5104\u7f8e\u5143\u80a1\u6b0a\u878d\u8cc7\u8a08\u5283\u5927\u8dcc28%\uff0c\u5f15\u7206\u6676\u7247\u80a1\u53bb\u69d3\u687f\u8e29\u8e0f\u3002\u7d0d\u6307\u91cd\u632b\u8fd12%\uff0c\u9053\u6307\u66b4\u8dcc953\u9ede\uff0cVIX\u6050\u614c\u6307\u6578\u66b4\u6f3221%\u783422\u3002"
   },
   {
     "file": "2026-06-09-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-09",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-09",
     "date": "2026-06-09",
-    "description": "SpaceX歷史性IPO抽水效應顯著，科技與AI板塊遭受獲利回吐，蘋果WWDC利好兌現大跌3.75%，納指下挫0.97%，標普微跌0.26%，防禦板塊與部分價值股護盤，道指逆市上漲0.17%，市場靜待明日5月CPI通膨數據。"
+    "description": "SpaceX\u6b77\u53f2\u6027IPO\u62bd\u6c34\u6548\u61c9\u986f\u8457\uff0c\u79d1\u6280\u8207AI\u677f\u584a\u906d\u53d7\u7372\u5229\u56de\u5410\uff0c\u860b\u679cWWDC\u5229\u597d\u514c\u73fe\u5927\u8dcc3.75%\uff0c\u7d0d\u6307\u4e0b\u632b0.97%\uff0c\u6a19\u666e\u5fae\u8dcc0.26%\uff0c\u9632\u79a6\u677f\u584a\u8207\u90e8\u5206\u50f9\u503c\u80a1\u8b77\u76e4\uff0c\u9053\u6307\u9006\u5e02\u4e0a\u6f320.17%\uff0c\u5e02\u5834\u975c\u5f85\u660e\u65e55\u6708CPI\u901a\u81a8\u6578\u64da\u3002"
   },
   {
     "file": "2026-06-08-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-08",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-08",
     "date": "2026-06-08",
-    "description": "英特爾代工大單爆發，特斯拉強勢站上，費半狂飆5.61%引領科技股報復性反彈，美債息高位整理。"
+    "description": "\u82f1\u7279\u723e\u4ee3\u5de5\u5927\u55ae\u7206\u767c\uff0c\u7279\u65af\u62c9\u5f37\u52e2\u7ad9\u4e0a\uff0c\u8cbb\u534a\u72c2\u98c65.61%\u5f15\u9818\u79d1\u6280\u80a1\u5831\u5fa9\u6027\u53cd\u5f48\uff0c\u7f8e\u50b5\u606f\u9ad8\u4f4d\u6574\u7406\u3002"
   },
   {
     "file": "2026-06-05-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-05",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-05",
     "date": "2026-06-05",
-    "description": "5月非農新增就業17.2萬爆冷大超預期，引爆降息預期重估！美債收益率狂飆至4.55%，科技與半導體遭血洗，納指跌4.2%、費半大跌10.26%，標普跌2.6%，創2025年10月以來最慘單日表現。"
+    "description": "5\u6708\u975e\u8fb2\u65b0\u589e\u5c31\u696d17.2\u842c\u7206\u51b7\u5927\u8d85\u9810\u671f\uff0c\u5f15\u7206\u964d\u606f\u9810\u671f\u91cd\u4f30\uff01\u7f8e\u50b5\u6536\u76ca\u7387\u72c2\u98c6\u81f34.55%\uff0c\u79d1\u6280\u8207\u534a\u5c0e\u9ad4\u906d\u8840\u6d17\uff0c\u7d0d\u6307\u8dcc4.2%\u3001\u8cbb\u534a\u5927\u8dcc10.26%\uff0c\u6a19\u666e\u8dcc2.6%\uff0c\u52752025\u5e7410\u6708\u4ee5\u4f86\u6700\u6158\u55ae\u65e5\u8868\u73fe\u3002"
   },
   {
     "file": "2026-06-04-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-04",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-04",
     "date": "2026-06-04",
-    "description": "道指暴漲874點創歷史新高！博通業績維持指引閃崩14.8%拖累晶片股，市場迎價值與小盤補漲狂歡"
+    "description": "\u9053\u6307\u66b4\u6f32874\u9ede\u5275\u6b77\u53f2\u65b0\u9ad8\uff01\u535a\u901a\u696d\u7e3e\u7dad\u6301\u6307\u5f15\u9583\u5d2914.8%\u62d6\u7d2f\u6676\u7247\u80a1\uff0c\u5e02\u5834\u8fce\u50f9\u503c\u8207\u5c0f\u76e4\u88dc\u6f32\u72c2\u6b61"
   },
   {
     "file": "2026-06-03-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-03",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-03",
     "date": "2026-06-03",
-    "description": "美股自歷史高位回調！中東地緣局勢驟緊，WTI原油大漲2.18%突破 $95 關口，ISM 服務通膨指標飆升，美債10年期利率攀升至 4.49%，標普500結束九連陽。盤後博通 (AVGO) 業績亮眼但因維持全年指引盤後大跌 6.29%，CrowdStrike (CRWD) 宣佈1拆4拆股但盤後震盪。"
+    "description": "\u7f8e\u80a1\u81ea\u6b77\u53f2\u9ad8\u4f4d\u56de\u8abf\uff01\u4e2d\u6771\u5730\u7de3\u5c40\u52e2\u9a5f\u7dca\uff0cWTI\u539f\u6cb9\u5927\u6f322.18%\u7a81\u7834 $95 \u95dc\u53e3\uff0cISM \u670d\u52d9\u901a\u81a8\u6307\u6a19\u98c6\u5347\uff0c\u7f8e\u50b510\u5e74\u671f\u5229\u7387\u6500\u5347\u81f3 4.49%\uff0c\u6a19\u666e500\u7d50\u675f\u4e5d\u9023\u967d\u3002\u76e4\u5f8c\u535a\u901a (AVGO) \u696d\u7e3e\u4eae\u773c\u4f46\u56e0\u7dad\u6301\u5168\u5e74\u6307\u5f15\u76e4\u5f8c\u5927\u8dcc 6.29%\uff0cCrowdStrike (CRWD) \u5ba3\u4f481\u62c64\u62c6\u80a1\u4f46\u76e4\u5f8c\u9707\u76ea\u3002"
   },
   {
     "file": "2026-06-02-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-02",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-02",
     "date": "2026-06-02",
-    "description": "美股大盤續創歷史新高！Marvell (MRVL) 與 HPE 財報驚艷引領 AI 算力半導體狂飆，SOX 指數暴漲 5.19%；Alphabet (GOOGL) 籌資 800 億美元回調 4.06%，JOLTs 職位空缺 760 萬超預期令利率短線波動。"
+    "description": "\u7f8e\u80a1\u5927\u76e4\u7e8c\u5275\u6b77\u53f2\u65b0\u9ad8\uff01Marvell (MRVL) \u8207 HPE \u8ca1\u5831\u9a5a\u8277\u5f15\u9818 AI \u7b97\u529b\u534a\u5c0e\u9ad4\u72c2\u98c6\uff0cSOX \u6307\u6578\u66b4\u6f32 5.19%\uff1bAlphabet (GOOGL) \u7c4c\u8cc7 800 \u5104\u7f8e\u5143\u56de\u8abf 4.06%\uff0cJOLTs \u8077\u4f4d\u7a7a\u7f3a 760 \u842c\u8d85\u9810\u671f\u4ee4\u5229\u7387\u77ed\u7dda\u6ce2\u52d5\u3002"
   },
   {
     "file": "2026-06-01-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-06-01",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-06-01",
     "date": "2026-06-01",
-    "description": "標普納指同創歷史收盤新高！輝達黃仁勳台北 Computex 重磅推出 RTX Spark 超級電腦晶片，股價狂飆 6.26% 領漲半導體，中東局勢緊張致 WTI 原油大漲 4.80%，高官拋售令 Meta 重挫 5.10%，特斯拉回跌 4.54% 破位。"
+    "description": "\u6a19\u666e\u7d0d\u6307\u540c\u5275\u6b77\u53f2\u6536\u76e4\u65b0\u9ad8\uff01\u8f1d\u9054\u9ec3\u4ec1\u52f3\u53f0\u5317 Computex \u91cd\u78c5\u63a8\u51fa RTX Spark \u8d85\u7d1a\u96fb\u8166\u6676\u7247\uff0c\u80a1\u50f9\u72c2\u98c6 6.26% \u9818\u6f32\u534a\u5c0e\u9ad4\uff0c\u4e2d\u6771\u5c40\u52e2\u7dca\u5f35\u81f4 WTI \u539f\u6cb9\u5927\u6f32 4.80%\uff0c\u9ad8\u5b98\u62cb\u552e\u4ee4 Meta \u91cd\u632b 5.10%\uff0c\u7279\u65af\u62c9\u56de\u8dcc 4.54% \u7834\u4f4d\u3002"
   },
   {
     "file": "2026-05-29-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-05-29",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-05-29",
     "date": "2026-05-29",
-    "description": "道瓊斯歷史首次攻克 51,000 大關！大盤九連陽續寫最長升浪。戴爾科技 (DELL) 狂飆 32.7% 震驚華爾街，微軟 (MSFT) 暴拉 5.4% 強勢突破，地緣與通膨利多雙重釋放。"
+    "description": "\u9053\u74ca\u65af\u6b77\u53f2\u9996\u6b21\u653b\u514b 51,000 \u5927\u95dc\uff01\u5927\u76e4\u4e5d\u9023\u967d\u7e8c\u5beb\u6700\u9577\u5347\u6d6a\u3002\u6234\u723e\u79d1\u6280 (DELL) \u72c2\u98c6 32.7% \u9707\u9a5a\u83ef\u723e\u8857\uff0c\u5fae\u8edf (MSFT) \u66b4\u62c9 5.4% \u5f37\u52e2\u7a81\u7834\uff0c\u5730\u7de3\u8207\u901a\u81a8\u5229\u591a\u96d9\u91cd\u91cb\u653e\u3002"
   },
   {
     "file": "2026-05-28-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-05-28",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-05-28",
     "date": "2026-05-28",
-    "description": "美股大盤連六漲創歷史新高！油價受停火消息大挫釋放通膨阻力，雪花 (SNOW) 暴飆 36.5% 引導軟體空頭踩踏，戴爾 (DELL) blokbuster 業績盤後激增 26%！"
+    "description": "\u7f8e\u80a1\u5927\u76e4\u9023\u516d\u6f32\u5275\u6b77\u53f2\u65b0\u9ad8\uff01\u6cb9\u50f9\u53d7\u505c\u706b\u6d88\u606f\u5927\u632b\u91cb\u653e\u901a\u81a8\u963b\u529b\uff0c\u96ea\u82b1 (SNOW) \u66b4\u98c6 36.5% \u5f15\u5c0e\u8edf\u9ad4\u7a7a\u982d\u8e29\u8e0f\uff0c\u6234\u723e (DELL) blokbuster \u696d\u7e3e\u76e4\u5f8c\u6fc0\u589e 26%\uff01"
   },
   {
     "file": "2026-05-27-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-05-27",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-05-27",
     "date": "2026-05-27",
-    "description": "三大指數齊創盤中歷史新高，道指大漲 182 點再登歷史巔峰！零售財報強勁引領消費股，油價重挫 5.8%，科技半導體高位歇息整固。"
+    "description": "\u4e09\u5927\u6307\u6578\u9f4a\u5275\u76e4\u4e2d\u6b77\u53f2\u65b0\u9ad8\uff0c\u9053\u6307\u5927\u6f32 182 \u9ede\u518d\u767b\u6b77\u53f2\u5dd4\u5cf0\uff01\u96f6\u552e\u8ca1\u5831\u5f37\u52c1\u5f15\u9818\u6d88\u8cbb\u80a1\uff0c\u6cb9\u50f9\u91cd\u632b 5.8%\uff0c\u79d1\u6280\u534a\u5c0e\u9ad4\u9ad8\u4f4d\u6b47\u606f\u6574\u56fa\u3002"
   },
   {
     "file": "2026-05-26-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-05-26",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-05-26",
     "date": "2026-05-26",
-    "description": "美光 (MU) 狂飆 19.3% 突破兆元市值里程碑，標普與納指創收盤歷史新高，地緣局勢緩和推動油價大跌 3%。"
+    "description": "\u7f8e\u5149 (MU) \u72c2\u98c6 19.3% \u7a81\u7834\u5146\u5143\u5e02\u503c\u91cc\u7a0b\u7891\uff0c\u6a19\u666e\u8207\u7d0d\u6307\u5275\u6536\u76e4\u6b77\u53f2\u65b0\u9ad8\uff0c\u5730\u7de3\u5c40\u52e2\u7de9\u548c\u63a8\u52d5\u6cb9\u50f9\u5927\u8dcc 3%\u3002"
   },
   {
     "file": "2026-05-22-us-stock-closing-daily-report.html",
-    "title": "美股收盤日報｜2026-05-22",
+    "title": "\u7f8e\u80a1\u6536\u76e4\u65e5\u5831\uff5c2026-05-22",
     "date": "2026-05-22",
-    "description": "新任聯準會主席宣誓就職，大盤八週連陽！DELL因AI伺服器暴漲16.77%，軟體板塊財報大捷爆發。"
+    "description": "\u65b0\u4efb\u806f\u6e96\u6703\u4e3b\u5e2d\u5ba3\u8a93\u5c31\u8077\uff0c\u5927\u76e4\u516b\u9031\u9023\u967d\uff01DELL\u56e0AI\u4f3a\u670d\u5668\u66b4\u6f3216.77%\uff0c\u8edf\u9ad4\u677f\u584a\u8ca1\u5831\u5927\u6377\u7206\u767c\u3002"
   }
 ]
