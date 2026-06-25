@@ -1199,3 +1199,7 @@ From github.com:wisdom925/html-report-skill
 Already up to date.
 Please wait while the script runs to retrieve the market data for 2026-06-23. I'm waiting for the notification.
 ERROR: agy finished but did not create reports/2026-06-23-us-stock-closing-daily-report.html. This is a bottom-agent artifact failure, not a scheduler failure.
+===== 2026-06-25 08:00:50 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
