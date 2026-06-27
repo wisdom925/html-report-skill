@@ -1230,3 +1230,62 @@ From github.com:wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
 No tools called. I will wait for the background query task or timer to notify me when the market data fetch is completed.
+我已成功依照 [daily_report_prompt.md](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的規格與指令，針對美股交易日 **2026-06-25** 生成並發布了最新的美股收盤日報。
+
+### 📊 2026-06-25 市場焦點摘要
+* **上游晶片景氣暴走**：記憶體晶片龍頭美光科技（MU）因公布爆炸性季報，股價暴漲 **+15.81%**，收於 **$1,213.56**。管理層確認旗下 HBM 晶片產能至 2027 年已被客戶全數訂完，引領半導體板塊（SOXX 暴漲 **+3.94%**、SMH 上漲 **+2.75%**）。
+* **「存儲荒」反噬下游巨頭**：由於晶片短缺（RAMmageddon）導致硬體採購成本暴增，蘋果（AAPL）與微軟（MSFT）同日宣佈調高 MacBook、iPad 及 Xbox 等核心硬體零售價，引發市場對毛利率受壓及消費者需求降溫的憂慮，導致蘋果股價重挫 **-6.15%**、微軟大跌 **-3.45%**，拖累納斯達克綜合指數收跌 **-0.46%**。
+* **大盤分化整理**：美債 10 年期收益率回落至 **4.392%**，5 月 PCE 通膨數據符合預期，激發大盤資金輪動，等權重標普與羅素 2000 中小盤股（IWM +0.75%）逆勢補漲，道瓊工業指數微漲 **+0.10%**（51,920.62點），標普 500 指數近乎平盤收官（-0.01%）。
+
+---
+
+### 🚀 產出與發布紀錄
+1. **生成 HTML 報告**：撰寫並執行了自動化生成腳本 [generate_report_45.py](file:///Users/wisdom/html-report-skill/generate_report_45.py)，於 `/reports` 資料夾下產出了包含 Chart.js 變動對比圖、Mermaid gantt 盤中時間線、CSS 宏觀環境 Tabs 選單、S&P 十一大板塊 Vanilla JS 可篩選排序表格、23 檔重點股交易決策判定表以及風險提示矩陣的精美 HTML 報告 [reports/2026-06-25-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-06-25-us-stock-closing-daily-report.html)。
+2. **數據抓取與緩存**：撰寫了 [scratch/query_quotes_25.py](file:///Users/wisdom/html-report-skill/scratch/query_quotes_25.py) 脚本來查詢與下載當日的收盤報價數據，並將結果存檔於 [scratch/quotes_2026-06-25.json](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-06-25.json)。
+3. **發布與推送**：調用發布工具自動更新了 [reports/manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json) 報告目錄清單，將 2026-06-25 的中繼資料（Metadata）置於陣列頂部，供根目錄的 [index.html](file:///Users/wisdom/html-report-skill/index.html) 動態抓取，並成功執行 Git Commit 與 Git Push 推送至遠端 GitHub Pages。
+
+---
+
+### 🔗 公開 URL
+👉 **[美股收盤日報｜2026-06-25 互動報告連結](https://wisdom925.github.io/html-report-skill/reports/2026-06-25-us-stock-closing-daily-report.html)**
+No report artifact changes to commit.
+===== 2026-06-26 08:02:47 +0800 daily_us_market_report end =====
+===== 2026-06-27 08:00:22 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+I will list the contents of the `/Users/wisdom/html-report-skill` directory to locate the instructions in `daily_report_prompt.md` and understand the structure of the existing reports and scripts.
+I will view the `daily_report_prompt.md` file to read the instructions, guidelines, and formatting requirements for generating the US stock closing daily report.
+I will inspect `generate_report_45.py` to see the structure and helper libraries used to fetch the data and generate the HTML files. This will guide us in creating a script to retrieve the 2026-06-26 data or construct the report contents.
+I will view the end of `generate_report_45.py` to check how it writes the HTML content to the reports directory and how it updates `reports/manifest.json`.
+I will check the directory structure inside `/Users/wisdom/html-report-skill/reports` to see the generated files and the structure of `manifest.json`.
+I will read the `reports/manifest.json` file to understand the structure of the reports list and how to append the new report to it.
+I will list the contents of the `cache/` directory to see if there are any cached data source files or scraped data that we can use to construct the 2026-06-26 daily report.
+I will view the last 100 lines of `daily_report.log` to see what scripts or commands were executed recently and how reports are typically built or compiled.
+I will view a section near the end of `daily_report.log` using lines 3000-3500 to see the output or recent executions.
+I will view the last 100 lines of `daily_report.log` (lines 1165 to 1265) to see the latest entries.
+I will check the files inside the `scratch/` directory to see if there are any query scripts or quote data files for 2026-06-26.
+I will view the content of `scratch/query_quotes_25.py` to see how it queries the stock data and what APIs it uses. This will help us fetch the data for 2026-06-26.
+I will read the contents of `scratch/quotes_2026-06-25.json` to verify the structure and values so we can query and verify the data for 2026-06-26.
+I will create and run a python script `scratch/query_quotes_26.py` to query Yahoo Finance for the closing quotes of Friday, 2026-06-26, and save them to `scratch/quotes_2026-06-26.json`. This will serve as our primary data source.
+I will execute `scratch/query_quotes_26.py` using python to fetch the market data for 2026-06-26.
+I will check the status of the quote fetching background task to see if it has finished.
+I will schedule a short timer to pause and wait for the quote-fetching background task to complete.
+I will pause now to let the quotes query script finish execution.
+I will perform a web search to gather news and context regarding the US stock market performance and major events on Friday, June 26, 2026. This will ensure our report's details and insights are accurate.
+I will perform another search to get specific stock movements and tech sector details for June 26, 2026. This includes movements of Nvidia, Apple, Microsoft, Amazon, Meta, Tesla, and others.
+I will run another web search to verify the exact macroeconomic indicators released on June 26, 2026, such as the PCE price index and consumer sentiment numbers.
+I will search for the specific consumer sentiment index or other economic indicators released on Friday, June 26, 2026, to ensure the macro section is complete.
+I will search for `publish.py` or other publishing tools in the local directory to see if there is an automated script we should invoke to commit, push, or build.
+I will list the `.antigravitycli/skills` directory to locate the `html-report` skill scripts.
+I will list the `.antigravitycli/skills/html-report` directory to check the tool scripts inside.
+I will list the scripts inside the `html-report` skill directory to see the publishing tools.
+I will view the content of `publish.py` to see what parameters it requires and how it updates `manifest.json` and performs git operations.
+I will perform a search to see if any of the existing python scripts read from the cached JSON files. This will tell us if there is a generator script we can reuse or if the reports are typically generated by hardcoding the retrieved data.
+I will view a section of `generate_report_45.py` to understand how the sectors table and other sections are formatted and how data is presented in the HTML.
+I will run a web search to fetch the exact closing points for the S&P 500, Nasdaq Composite, Dow Jones, Russell 2000, and SOX on Friday, June 26, 2026, to ensure that the tables in Section 1 contain precise values.
+I will view the bottom script section of `generate_report_45.py` (lines 900-1000) to ensure we copy all JS logic (such as the theme toggle, sidebar TOC scroll spy, and table filters) correctly.
+I will write the Python script `generate_report_46.py` containing the HTML code for the Friday, June 26, 2026 daily report. It uses the exact data we queried, provides Chart.js configuration, Mermaid graphs, pure CSS tabs, and a dynamic JS-based S&P sectors table. It outputs to `reports/2026-06-26-us-stock-closing-daily-report.html`.
+I will create the `generate_report_46.py` script in the workspace without specifying chat artifact metadata, as it is a project code file.
+I will run the `generate_report_46.py` script to generate the HTML report.
+I will execu
