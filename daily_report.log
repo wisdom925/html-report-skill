@@ -1446,3 +1446,57 @@ From github.com:wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
 No further tool calls needed. I will wait for the background quotes query task to complete.
+我已成功讀取並執行 `daily_report_prompt.md` 中的規格與格式要求，針對美股交易日 **2026-07-02**，在專案目錄 `/Users/wisdom/html-report-skill` 下生成並發布了最新美股收盤日報。
+
+### 📊 2026-07-02 市場焦點與數據摘要
+* **就業爆冷，防禦與價值板塊大狂飆**：非農就業報告公佈前夕，盤前公佈的美國 6 月 ADP 私營就業僅錄得 **5.7萬人**（遠遜於預期的11.5萬人），預示就業市場顯著冷卻。這重燃了降息預期，避險資金大舉啟動價值防禦輪動。道瓊斯工業指數狂飆 **+1.14%**（594.83點）創歷史收盤新高；標普 500 指數持平收官。
+* **科技半導體踩踏，特斯拉 Sell the News**：費城半導體指數（SOXX）重創 **-5.57%**，美光科技（MU）跌破千元大關收跌 **-5.49%**，馬威爾（MRVL）暴跌 **-9.84%**。特斯拉（TSLA）雖二季度銷量超預期，但利多落地後遭遇獲利了結大跌 **-7.49%**。
+* **蘋果與 SaaS 護盤**：蘋果（AAPL）受折疊屏 iPhone 上調出貨目標至 1000 萬部刺激逆市大漲 **+4.84%**；Adobe（ADBE +4.14%）及 Palantir（PLTR +2.84%）雙雙獲得大行評級調升，引領軟體板塊低位修復。
+* **大宗商品暴漲**：降息預期回暖與美元走弱下，現貨黃金（GLD）暴漲 **+2.03%**，以太坊（ETH-USD）大漲 **+5.69%**。
+
+---
+
+### 🛠️ 完成的工作內容
+1. **數據獲取**：編寫並運行了 [scratch/query_quotes_02.py](file:///Users/wisdom/html-report-skill/scratch/query_quotes_02.py) 查詢 65 檔核心標的，將精確數據存入 [scratch/quotes_2026-07-02.json](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-07-02.json)。
+2. **報告編寫與生成**：編寫了 Python 自動化生成腳本 [generate_report_50.py](file:///Users/wisdom/html-report-skill/generate_report_50.py) 並執行，在 repo 本地產出 [reports/2026-07-02-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-07-02-us-stock-closing-daily-report.html)。
+3. **完成發布與推送**：調用 `publish.py` 工具更新了 [reports/manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json) 目錄清單，並自動完成了 Git Commit 與 Push 提交至遠端 GitHub Pages。
+
+---
+
+### 🌐 公開報告 URL
+
+請點擊以下連結，查看包含 Chart.js 動態折線圖、Mermaid 走勢時間線、CSS 宏觀 Tabs 標籤頁、可即時搜尋與排序的 11 大板塊表格、23 檔重點股決策標籤的完整互動式收盤日報：
+
+👉 **[美股收盤日報｜2026-07-02 互動式報告連結](https://wisdom925.github.io/html-report-skill/reports/2026-07-02-us-stock-closing-daily-report.html)**
+No report artifact changes to commit.
+===== 2026-07-03 08:02:25 +0800 daily_us_market_report end =====
+===== 2026-07-03 08:20:33 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+reports/2026-07-02-us-stock-closing-daily-report.html already exists and is registered in manifest; skipping regeneration.
+No report artifact changes to commit.
+===== 2026-07-03 08:20:36 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-07-02-us-stock-closing-daily-report.html
+From github.com:wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main fd0ed31] report: 美股收盤日報備援｜2026-07-02
+ 1 file changed, 98 insertions(+), 98 deletions(-)
+To github.com:wisdom925/reports.git
+   787939b..fd0ed31  main -> main
+===== 2026-07-03 08:21:06 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+reports/2026-07-02-us-stock-closing-daily-report.html already exists and is registered in manifest; skipping regeneration.
+No report artifact changes to commit.
+===== 2026-07-03 08:21:08 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-07-02-us-stock-closing-daily-report.html
+From github.com:wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+===== 2026-07-04 08:00:42 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
