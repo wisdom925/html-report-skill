@@ -1585,4 +1585,28 @@ To github.com:wisdom925/reports.git
 來自 github.com:wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 已經是最新的。
-I will wait for the query script to finish fetching the market data. Once it finishes, I'll review the fetched quotes and proceed to generate the HTML report.
+已成功為美股交易日 **2026-07-07** 生成並發布了最新日報。
+
+### 📊 2026-07-07 市場概覽
+*   **道瓊斯指數（Dow Jones）**：收於 **52,892.40** 點（-0.31%），退守 53,000 點大關。
+*   **標普 500 指數（S&P 500）**：收於 **7,501.27** 點（-0.48%），跌落歷史新高。
+*   **納斯達克綜合指數（Nasdaq）**：收於 **25,651.16** 點（-1.80%），受晶片重挫拖累大跌。
+*   **費城半導體指數（SOXX）**：暴跌 **-5.13%** 報 551.69 點，吞沒昨日大漲空間。
+*   **特斯拉（TSLA）**：高位獲利回調，大跌 **-4.02%** 收報 $402.90。
+*   **焦點事件**：原油價格（USO）受地緣局勢刺激飆升 4.38%，推升10Y美債息至 4.529%，高估值科技硬件重挫；大市值巨頭 Meta 逆勢大漲 2.55% 創新高。
+
+---
+
+### 📂 本次工作產出檔案
+
+1.  **報告生成指令指令檔**：[generate_report_53.py](file:///Users/wisdom/html-report-skill/generate_report_53.py)
+2.  **生成的 HTML 報告**：[2026-07-07-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-07-07-us-stock-closing-daily-report.html)
+3.  **更新的清單檔案**：[manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+
+---
+
+### 🌐 公開日報 URL
+🚀 日報已自動更新至 GitHub Pages，您可透過以下連結查看具備 Chart.js 互動圖表、分頁標籤（Tabs）與可排序表格的完整精美日報：
+
+👉 **[https://wisdom925.github.io/html-report-skill/reports/2026-07-07-us-stock-closing-daily-report.html](https://wisdom925.github.io/html-report-skill/reports/2026-07-07-us-stock-closing-daily-report.html)**
+===== 2026-07-08 08:02:15 +0800 daily_us_market_report end =====
