@@ -1883,3 +1883,39 @@ I will view lines 800 to 1000 of `generate_report_57.py` to see the rest of the 
 I will run a command to verify the git remote URL of the current repository so that we know where the report will be hosted.
 I will create the Python script `generate_report_58.py` which will write the complete HTML report for July 14, 2026, to the `reports` directory and then invoke the `publish.py` script. The HTML will be formatted as a professional US stock daily report with advanced features (dynamic Chart.js returns chart, interactive timeline, tabbed macro environment, sortable sectors table, collapsible stock details, and custom watchlist table).
 I will now run the report generation and publishing script using `run_command`. This will compile the HTML, update `manifest.json`, commit and push changes, and output the final public URL.
+我已成功生成並發布了 **2026-07-14** 的美股收盤日報。
+
+### 📋 完成工作摘要
+
+1. **數據獲取與暫存**：
+   * 編寫並執行了查詢指令檔 [query_quotes_2026-07-14.py](file:///Users/wisdom/html-report-skill/scratch/query_quotes_2026-07-14.py)。
+   * 將美股 65 檔核心指數、板塊與關注個股的收盤數據暫存至 [quotes_2026-07-14.json](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-07-14.json)。
+
+2. **報告編寫與生成**：
+   * 建立自動化生成指令檔 [generate_report_58.py](file:///Users/wisdom/html-report-skill/generate_report_58.py)。
+   * 生成互動式 HTML 報告 [2026-07-14-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-07-14-us-stock-closing-daily-report.html)，內容嚴格遵循 [daily_report_prompt.md](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的 16 個區塊規格與高階設計美學（包含 Chart.js 動態漲跌對比圖、Mermaid 盤中時間線、純 CSS Tab 宏觀頁面、可排序板塊表格、折疊個股分析、以及交易標籤矩陣）。
+
+3. **報告更新與發布**：
+   * 自動更新清單索引 [manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json)。
+   * 完成 Git 自動 Commit & Push，成功部署至 GitHub Pages。
+
+---
+
+### 🌐 公開報告 URL
+
+👉 **[美股收盤日報｜2026-07-14 互動式 HTML 報告連結](https://wisdom925.github.io/html-report-skill/reports/2026-07-14-us-stock-closing-daily-report.html)**
+No report artifact changes to commit.
+===== 2026-07-15 08:02:13 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-07-14-us-stock-closing-daily-report.html
+來自 github.com:wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+已經是最新的。
+[main bc82808] report: 美股收盤日報備援｜2026-07-14
+ 2 files changed, 1126 insertions(+)
+ create mode 100644 reports/2026-07-14-us-stock-closing-daily-report.html
+To github.com:wisdom925/reports.git
+   51d852f..bc82808  main -> main
+===== 2026-07-16 08:00:36 +0800 daily_us_market_report start =====
+From github.com:wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
