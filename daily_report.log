@@ -2154,3 +2154,37 @@ ssh: connect to host github.com port 22: Operation timed out
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+我已順利為美股交易日 **2026-07-31** 生成並發布最新美股收盤日報。
+
+### 📄 產出檔案
+*   產出的 HTML 報告檔案：[reports/2026-07-31-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-07-31-us-stock-closing-daily-report.html)
+*   已更新的清單檔案：[reports/manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+
+### 🌐 公開 URL
+報告已成功部署並發布至 GitHub Pages：
+👉 [https://wisdom925.github.io/html-report-skill/reports/2026-07-31-us-stock-closing-daily-report.html](https://wisdom925.github.io/html-report-skill/reports/2026-07-31-us-stock-closing-daily-report.html)
+
+---
+
+### 📊 2026-07-31 日報重點精華摘要
+1.  **大盤表現**：美股三大指數全面收漲。標普 500 指數漲 0.70% 報 7,489.72 點，納斯達克指數漲 1.00% 報 25,373.85 點，道瓊工業指數漲 0.53% 報 52,485.03 點。
+2.  **核心驅動**：**亞馬遜 (AMZN) 財報表現優異並帶領 AWS 營收飆增 37%**，激勵股價暴漲 10.20%，修復了市場對 AI 資本支出回報的悲觀預期；這抵消了**蘋果 (AAPL) 因第四季展望疲軟以及手機晶片供應鏈限制**導致大跌 6.80% 的衝擊。
+3.  **宏觀環境**：6月美國核心 PCE 物價指數同比上漲 3.3% 符合預期。高企的核心通膨使得 **10年期美債收益率飆升至 4.75% 創年內新高**，進一步壓制公用事業 (XLU) 與房地產 (XLRE) 等防禦板塊。
+4.  **互動功能**：HTML 報告中包含 Chart.js 指數對比圖表、Mermaid 走勢時間線、宏觀 Tabs 分頁切換、支持 Vanilla JS 動態排序與搜尋篩選的板塊及個股表格，以及折疊收合設計。
+No report artifact changes to commit.
+===== 2026-08-01 13:00:09 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-07-31-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main 4fa3d82] report: 美股收盤日報備援｜2026-07-31
+ 2 files changed, 1123 insertions(+), 136 deletions(-)
+ create mode 100644 reports/2026-07-31-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   d38cc58..4fa3d82  main -> main
+===== 2026-08-04 08:00:13 +0800 daily_us_market_report start =====
+致命錯誤: 無法存取 'https://github.com/wisdom925/html-report-skill.git/'：Failed to connect to github.com port 443 after 75017 ms: Couldn't connect to server
+===== 2026-08-04 08:38:10 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
