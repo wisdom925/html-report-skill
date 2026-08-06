@@ -1,0 +1,569 @@
+{
+  "SPY": {
+    "symbol": "SPY",
+    "price": 769.79,
+    "prev": 771.33,
+    "change": -1.54,
+    "pct": -0.2,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "QQQ": {
+    "symbol": "QQQ",
+    "price": 717.3,
+    "prev": 723.85,
+    "change": -6.55,
+    "pct": -0.9,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "DIA": {
+    "symbol": "DIA",
+    "price": 542.81,
+    "prev": 540.43,
+    "change": 2.38,
+    "pct": 0.44,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "IWM": {
+    "symbol": "IWM",
+    "price": 299.77,
+    "prev": 301.71,
+    "change": -1.94,
+    "pct": -0.64,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "SMH": {
+    "symbol": "SMH",
+    "price": 569.7,
+    "prev": 575.71,
+    "change": -6.01,
+    "pct": -1.04,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "SOXX": {
+    "symbol": "SOXX",
+    "price": 530.7,
+    "prev": 542.21,
+    "change": -11.51,
+    "pct": -2.12,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "^VIX": {
+    "symbol": "^VIX",
+    "price": 15.81,
+    "prev": 16.5,
+    "change": -0.69,
+    "pct": -4.18,
+    "timestamp": 1785913200,
+    "date": "2026-08-05"
+  },
+  "XLK": {
+    "symbol": "XLK",
+    "price": 185.91,
+    "prev": 186.9,
+    "change": -0.99,
+    "pct": -0.53,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "IGV": {
+    "symbol": "IGV",
+    "price": 101.31,
+    "prev": 102.0,
+    "change": -0.69,
+    "pct": -0.68,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLF": {
+    "symbol": "XLF",
+    "price": 58.0,
+    "prev": 57.88,
+    "change": 0.12,
+    "pct": 0.21,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLV": {
+    "symbol": "XLV",
+    "price": 164.16,
+    "prev": 162.1,
+    "change": 2.06,
+    "pct": 1.27,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLE": {
+    "symbol": "XLE",
+    "price": 57.31,
+    "prev": 58.52,
+    "change": -1.21,
+    "pct": -2.07,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLI": {
+    "symbol": "XLI",
+    "price": 186.35,
+    "prev": 186.4,
+    "change": -0.05,
+    "pct": -0.03,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLB": {
+    "symbol": "XLB",
+    "price": 52.64,
+    "prev": 52.0,
+    "change": 0.64,
+    "pct": 1.23,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLRE": {
+    "symbol": "XLRE",
+    "price": 45.2,
+    "prev": 45.17,
+    "change": 0.03,
+    "pct": 0.07,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLU": {
+    "symbol": "XLU",
+    "price": 43.66,
+    "prev": 44.11,
+    "change": -0.45,
+    "pct": -1.02,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLC": {
+    "symbol": "XLC",
+    "price": 110.87,
+    "prev": 112.04,
+    "change": -1.17,
+    "pct": -1.04,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLY": {
+    "symbol": "XLY",
+    "price": 118.64,
+    "prev": 118.29,
+    "change": 0.35,
+    "pct": 0.3,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "XLP": {
+    "symbol": "XLP",
+    "price": 85.33,
+    "prev": 85.37,
+    "change": -0.04,
+    "pct": -0.05,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "NVDA": {
+    "symbol": "NVDA",
+    "price": 219.22,
+    "prev": 211.94,
+    "change": 7.28,
+    "pct": 3.43,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "AAPL": {
+    "symbol": "AAPL",
+    "price": 311.0,
+    "prev": 309.38,
+    "change": 1.62,
+    "pct": 0.52,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "MSFT": {
+    "symbol": "MSFT",
+    "price": 487.46,
+    "prev": 492.81,
+    "change": -5.35,
+    "pct": -1.09,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "GOOGL": {
+    "symbol": "GOOGL",
+    "price": 362.43,
+    "prev": 377.65,
+    "change": -15.22,
+    "pct": -4.03,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "AMZN": {
+    "symbol": "AMZN",
+    "price": 272.65,
+    "prev": 277.42,
+    "change": -4.77,
+    "pct": -1.72,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "META": {
+    "symbol": "META",
+    "price": 588.77,
+    "prev": 587.94,
+    "change": 0.83,
+    "pct": 0.14,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "TSLA": {
+    "symbol": "TSLA",
+    "price": 321.55,
+    "prev": 327.35,
+    "change": -5.8,
+    "pct": -1.77,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "SPCX": {
+    "symbol": "SPCX",
+    "price": 108.27,
+    "prev": 125.33,
+    "change": -17.06,
+    "pct": -13.61,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "AMD": {
+    "symbol": "AMD",
+    "price": 482.05,
+    "prev": 518.58,
+    "change": -36.53,
+    "pct": -7.04,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "AVGO": {
+    "symbol": "AVGO",
+    "price": 418.28,
+    "prev": 418.16,
+    "change": 0.12,
+    "pct": 0.03,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "MRVL": {
+    "symbol": "MRVL",
+    "price": 211.02,
+    "prev": 218.59,
+    "change": -7.57,
+    "pct": -3.46,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "MU": {
+    "symbol": "MU",
+    "price": 893.19,
+    "prev": 892.67,
+    "change": 0.52,
+    "pct": 0.06,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "TSM": {
+    "symbol": "TSM",
+    "price": 414.0,
+    "prev": 417.17,
+    "change": -3.17,
+    "pct": -0.76,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "ASML": {
+    "symbol": "ASML",
+    "price": 1678.22,
+    "prev": 1711.89,
+    "change": -33.67,
+    "pct": -1.97,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "ARM": {
+    "symbol": "ARM",
+    "price": 274.58,
+    "prev": 280.56,
+    "change": -5.98,
+    "pct": -2.13,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "DELL": {
+    "symbol": "DELL",
+    "price": 462.7,
+    "prev": 467.27,
+    "change": -4.57,
+    "pct": -0.98,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "VRT": {
+    "symbol": "VRT",
+    "price": 277.94,
+    "prev": 269.93,
+    "change": 8.01,
+    "pct": 2.97,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "ANET": {
+    "symbol": "ANET",
+    "price": 197.31,
+    "prev": 190.51,
+    "change": 6.8,
+    "pct": 3.57,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "CRM": {
+    "symbol": "CRM",
+    "price": 192.98,
+    "prev": 190.99,
+    "change": 1.99,
+    "pct": 1.04,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "NOW": {
+    "symbol": "NOW",
+    "price": 117.22,
+    "prev": 118.14,
+    "change": -0.92,
+    "pct": -0.78,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "SNOW": {
+    "symbol": "SNOW",
+    "price": 316.84,
+    "prev": 316.77,
+    "change": 0.07,
+    "pct": 0.02,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "ORCL": {
+    "symbol": "ORCL",
+    "price": 144.39,
+    "prev": 145.74,
+    "change": -1.35,
+    "pct": -0.93,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "ADBE": {
+    "symbol": "ADBE",
+    "price": 259.32,
+    "prev": 257.49,
+    "change": 1.83,
+    "pct": 0.71,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "PANW": {
+    "symbol": "PANW",
+    "price": 362.66,
+    "prev": 366.34,
+    "change": -3.68,
+    "pct": -1.0,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "CRWD": {
+    "symbol": "CRWD",
+    "price": 209.86,
+    "prev": 211.22,
+    "change": -1.36,
+    "pct": -0.64,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "PLTR": {
+    "symbol": "PLTR",
+    "price": 158.43,
+    "prev": 162.66,
+    "change": -4.23,
+    "pct": -2.6,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "CEG": {
+    "symbol": "CEG",
+    "price": 265.12,
+    "prev": 267.25,
+    "change": -2.13,
+    "pct": -0.8,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "VST": {
+    "symbol": "VST",
+    "price": 140.58,
+    "prev": 143.23,
+    "change": -2.65,
+    "pct": -1.85,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "NRG": {
+    "symbol": "NRG",
+    "price": 120.73,
+    "prev": 117.04,
+    "change": 3.69,
+    "pct": 3.15,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "ETN": {
+    "symbol": "ETN",
+    "price": 447.28,
+    "prev": 444.77,
+    "change": 2.51,
+    "pct": 0.56,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "PWR": {
+    "symbol": "PWR",
+    "price": 682.99,
+    "prev": 693.0,
+    "change": -10.01,
+    "pct": -1.44,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "GEV": {
+    "symbol": "GEV",
+    "price": 1017.96,
+    "prev": 1018.53,
+    "change": -0.57,
+    "pct": -0.06,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "OKLO": {
+    "symbol": "OKLO",
+    "price": 42.99,
+    "prev": 43.33,
+    "change": -0.34,
+    "pct": -0.78,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "LITE": {
+    "symbol": "LITE",
+    "price": 826.26,
+    "prev": 849.47,
+    "change": -23.21,
+    "pct": -2.73,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "COHR": {
+    "symbol": "COHR",
+    "price": 328.22,
+    "prev": 323.73,
+    "change": 4.49,
+    "pct": 1.39,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "FLNC": {
+    "symbol": "FLNC",
+    "price": 14.23,
+    "prev": 15.67,
+    "change": -1.44,
+    "pct": -9.19,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "BTC-USD": {
+    "symbol": "BTC-USD",
+    "price": 64555.87,
+    "prev": 64055.95,
+    "change": 499.92,
+    "pct": 0.78,
+    "timestamp": 1785974400,
+    "date": "2026-08-06"
+  },
+  "ETH-USD": {
+    "symbol": "ETH-USD",
+    "price": 1905.77,
+    "prev": 1868.39,
+    "change": 37.38,
+    "pct": 2.0,
+    "timestamp": 1785974400,
+    "date": "2026-08-06"
+  },
+  "USO": {
+    "symbol": "USO",
+    "price": 114.88,
+    "prev": 115.78,
+    "change": -0.9,
+    "pct": -0.78,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "GLD": {
+    "symbol": "GLD",
+    "price": 389.64,
+    "prev": 374.16,
+    "change": 15.48,
+    "pct": 4.14,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "UUP": {
+    "symbol": "UUP",
+    "price": 28.09,
+    "prev": 28.16,
+    "change": -0.07,
+    "pct": -0.25,
+    "timestamp": 1785936600,
+    "date": "2026-08-05"
+  },
+  "^TNX": {
+    "symbol": "^TNX",
+    "price": 4.62,
+    "prev": 4.63,
+    "change": -0.01,
+    "pct": -0.22,
+    "timestamp": 1785932400,
+    "date": "2026-08-05"
+  },
+  "^TYX": {
+    "symbol": "^TYX",
+    "price": 5.17,
+    "prev": 5.19,
+    "change": -0.02,
+    "pct": -0.31,
+    "timestamp": 1785932400,
+    "date": "2026-08-05"
+  },
+  "^FVX": {
+    "symbol": "^FVX",
+    "price": 4.32,
+    "prev": 4.33,
+    "change": -0.01,
+    "pct": -0.21,
+    "timestamp": 1785932400,
+    "date": "2026-08-05"
+  }
+}
