@@ -2554,3 +2554,31 @@ WARN: command failed (attempt 1/4, exit 1); retrying in 15s: git pull origin mai
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+已經為美股交易日 **2026-08-14** 生成並發布了最新美股收盤日報。
+
+### 成果與產出檔案
+1. **生成報告網頁**：[`reports/2026-08-14-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-08-14-us-stock-closing-daily-report.html)
+2. **更新索引清單**：[`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+3. **報表生成指令**：[`generate_report_20260814.py`](file:///Users/wisdom/html-report-skill/generate_report_20260814.py)
+4. **美股數據擷取**：[`scratch/query_quotes_2026-08-14.py`](file:///Users/wisdom/html-report-skill/scratch/query_quotes_2026-08-14.py) 及 [`scratch/quotes_2026-08-14.json`](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-08-14.json)
+
+---
+
+### 公開訪問網址 (Public URL)
+報告已成功推送至 GitHub Pages，您可透過以下連結查看具備互動圖表、分頁標籤與可搜尋表格的完整報告：
+👉 **https://wisdom925.github.io/html-report-skill/reports/2026-08-14-us-stock-closing-daily-report.html**
+No report artifact changes to commit.
+===== 2026-08-15 08:03:34 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-08-14-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main 9950639] report: 美股收盤日報備援｜2026-08-14
+ 2 files changed, 1388 insertions(+), 162 deletions(-)
+ create mode 100644 reports/2026-08-14-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   d39e35d..9950639  main -> main
+===== 2026-08-18 08:00:11 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
