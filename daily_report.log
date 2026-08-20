@@ -2616,3 +2616,33 @@ To https://github.com/wisdom925/reports.git
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+已成功生成並發布 2026-08-18 的美股收盤日報。
+
+### 📊 發布資訊與公開連結
+* **公開報告連結**：[https://wisdom925.github.io/html-report-skill/reports/2026-08-18-us-stock-closing-daily-report.html](https://wisdom925.github.io/html-report-skill/reports/2026-08-18-us-stock-closing-daily-report.html)
+* **本地產出報告**：[`2026-08-18-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-08-18-us-stock-closing-daily-report.html)
+* **更新日報清單**：[`manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+* **生成腳本**：[`generate_report_20260818.py`](file:///Users/wisdom/html-report-skill/generate_report_20260818.py)
+
+---
+
+### 📝 日報內容摘要 (2026-08-18)
+* **大盤表現**：三大指數連跌三日。標普500收跌 **-0.68%**，納指大跌 **-1.30%**，道指微跌 **-0.24%**。費半指數（SOXX）重挫 **-4.96%**。
+* **主要驅動因素**：AI晶片與物理硬件板塊在前日大漲後遭遇踩踏式的強烈獲利了結。輝達收跌 **-2.34%**，前日暴漲的光通訊龍頭 Coherent (COHR) 重挫 **-12.75%**，Lumentum (LITE) 跌 **-9.87%**。
+* **板塊輪動**：資金流出擁擠的硬體板塊後，逆勢回流超跌的軟體 SaaS 股（Salesforce 逆勢漲 **+2.71%**，Adobe 漲 **+3.58%**）與傳統防禦板塊（能源 XLE 漲 **+1.76%**，醫療 XLV 漲 **+1.60%**）。
+* **經濟數據與財報**：美國 7 月新屋開工總數大跌 12.4% 遠遜預期；家得寶 (Home Depot) Q2 財報優於預期，股價收盤僅微跌 **-0.12%**，顯著抗跌。
+No report artifact changes to commit.
+===== 2026-08-19 08:02:19 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-08-18-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main b538e5e] report: 美股收盤日報備援｜2026-08-18
+ 2 files changed, 1192 insertions(+)
+ create mode 100644 reports/2026-08-18-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   647da05..b538e5e  main -> main
+===== 2026-08-20 08:00:51 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
