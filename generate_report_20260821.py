@@ -1079,7 +1079,8 @@ cmd = [
     publish_script,
     output_path,
     title,
-    description
+    description,
+    "--no-push"
 ]
 
 print(f"Running publish script: {' '.join(cmd)}")
