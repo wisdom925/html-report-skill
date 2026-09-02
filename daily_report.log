@@ -3082,3 +3082,45 @@ WARN: command failed (attempt 1/4, exit 1); retrying in 15s: git pull origin mai
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+已完成針對美股交易日 **2026-08-31**（8月月線收官日）的完整《美股收盤日報》生成與發布。
+
+---
+
+### 📊 2026-08-31 美股盤後核心摘要
+
+* **大盤表現**：
+  * **S&P 500 (SPY)**：$767.05（**-0.53%** / -4.05 點）
+  * **Nasdaq 100 (QQQ)**：$716.76（**-0.60%** / -4.35 點）
+  * **Dow Jones (DIA)**：$531.57（**-0.68%** / -3.65 點）
+  * **Russell 2000 (IWM)**：$293.93（**-1.96%** / -5.88 點）
+  * **費城半導體 (SOXX)**：$511.04（**-2.74%** / -14.39 點）
+  * **科技軟體 (IGV)**：$109.98（**-0.31%** / -0.34 點）
+  * **能源板塊 (XLE)**：$63.96（**+2.68%** / +1.67 點）
+  * **恐慌指數 (VIX)**：14.92（**+2.83%** / +0.41 點）
+* **宏觀與板塊焦點**：
+  * **宏觀利率**：美債 10 年期收益率攀升至 **4.76%**（+9 bps），30 年期升至 **5.25%**，傑克森霍爾鷹派定調使 9 月降息預期降溫（按兵不動機率升至 68%），壓制小盤股與資本密集型資產。
+  * **商品市場**：WTI 原油暴漲 **+3.59%** 突破 86 美元（收報 $86.39），激勵能源板塊（XLE +2.68%）領跑全場。
+  * **主線輪動**：晶片硬體端（NVDA -3.16%、MRVL -12.34%、ARM -5.21%）及公用事業重電（XLU -2.20%、GEV -5.80%）面臨月末獲利回吐；資金轉向大科技避險（TSLA +3.70%、AMZN +1.37%、AAPL +0.72%、MSFT +0.44%）以及商業化 AI 軟體龍頭（**ServiceNow NOW 狂飆 +6.91%** 創歷史新高、CRM +2.18%、ADBE +1.26%）。
+
+---
+
+### 🌐 報告公開 URL 與產出文件
+
+* **公開 URL**：[https://wisdom925.github.io/html-report-skill/reports/2026-08-31-us-stock-closing-daily-report.html](https://wisdom925.github.io/html-report-skill/reports/2026-08-31-us-stock-closing-daily-report.html)
+* **本地 HTML 報告路徑**：[`reports/2026-08-31-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-08-31-us-stock-closing-daily-report.html)
+* **清單索引更新**：[`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)（已自動新增最新日報條目並完成 Git commit）
+No report artifact changes to commit.
+===== 2026-09-01 08:04:28 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-08-31-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main 4fcee18] report: 美股收盤日報備援｜2026-08-31
+ 2 files changed, 1391 insertions(+), 190 deletions(-)
+ create mode 100644 reports/2026-08-31-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   a1356c1..4fcee18  main -> main
+===== 2026-09-02 08:00:42 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
