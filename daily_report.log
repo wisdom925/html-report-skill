@@ -3124,3 +3124,56 @@ To https://github.com/wisdom925/reports.git
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+已完成《美股收盤日報｜2026-09-01》的完整數據分析、互動 HTML 報告生成、Manifest 更新與 GitHub Pages 發布。
+
+---
+
+### 🌐 公開報告 URL
+👉 **[https://wisdom925.github.io/html-report-skill/reports/2026-09-01-us-stock-closing-daily-report.html](https://wisdom925.github.io/html-report-skill/reports/2026-09-01-us-stock-closing-daily-report.html)**
+
+---
+
+### 📊 2026-09-01 核心數據與盤面精要
+
+| 指數 / 標的 | 收盤點位 / 價格 | 當日漲跌幅 | 盤面特徵與核心驅動 |
+| :--- | :--- | :--- | :--- |
+| **標普 500 (SPY)** | $761.78 | **-0.69%** | 回踩測試 20 日均線（7,615 點附近），中長線多頭架構未破 |
+| **納斯達克 100 (QQQ)** | $707.64 | **-1.27%** | 長端美債利率升至 4.80%，高估值軟體與晶片硬體承壓 |
+| **道瓊工業 (DIA)** | $527.75 | **-0.72%** | 製造業 PMI（47.2）偏弱，工業資本品普遍承壓 |
+| **費城半導體 (SOXX)** | $500.31 | **-2.10%** | 戴爾（-6.80%）、LITE（-5.01%）大跌，晶片鏈測試 50 日均線 |
+| **科技軟體 (IGV)** | $106.18 | **-3.46%** | 連日大漲後遇高利率回吐，CRWD（-6.90%）、ORCL（-5.23%）回調 |
+| **能源板塊 (XLE)** | $64.77 | **+1.27%** | **全場最強**，WTI 原油狂飆 +5.85% 突破 $90.78 大關 |
+| **波動率指數 (VIX)** | 16.34 | **+9.52%** | 升破 16 關口，市場構建保護性領口期權防範非農波動 |
+| **10年期美債殖利率** | 4.80% | **+4 bps** | 收益率曲線熊市變陡，壓制高市盈率估值 |
+
+---
+
+### 💡 核心亮點與結構特徵
+1. **蘋果（[AAPL](file:///Users/wisdom/html-report-skill/reports/2026-09-01-us-stock-closing-daily-report.html) +2.61%）單騎救主**：宣佈秋季特別發布會日期，市場預期搭載下一代晶片與 Apple Intelligence 2.0，股價創歷史新高支撐大盤。
+2. **原油暴漲刺激能源與核電防禦**：WTI 原油飆升 5.85% 破 $90，XLE 勇奪板塊冠軍；核電龍頭 Constellation Energy（CEG +2.02%）與 Vistra（VST +0.52%）獲 AI 長期購電協議護盤逆勢收紅。
+3. **高低切換與去估值泡沫**：資金自前期大漲的 SaaS 軟體與光模組流出，回流低估值高現金流與抗通脹板塊。
+
+---
+
+### 🛠️ 產出檔案清單
+- 報告檔案：[reports/2026-09-01-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-09-01-us-stock-closing-daily-report.html)
+- 清單索引：[reports/manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+- 行情快照：[scratch/quotes_2026-09-01.json](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-09-01.json)
+- 生成程式：[generate_report_20260901.py](file:///Users/wisdom/html-report-skill/generate_report_20260901.py)
+No report artifact changes to commit.
+===== 2026-09-02 08:03:29 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-09-01-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main 2f92be7] report: 美股收盤日報備援｜2026-09-01
+ 2 files changed, 1308 insertions(+)
+ create mode 100644 reports/2026-09-01-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   4fcee18..2f92be7  main -> main
+===== 2026-09-03 08:00:32 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+請稍候，正在計算 2026-09-02 各大指數與關鍵 ETF 的技術指標資料...
+已啟動技術指標計算任務，正在等待結果...
