@@ -3179,3 +3179,56 @@ Already up to date.
 已啟動技術指標計算任務，正在等待結果...
 正在生成 2026-09-02 美股收盤日報並執行發布程序...
 正在向遠端倉庫推送提交...
+已完成美股交易日 **2026-09-02** 的《美股收盤日報》撰寫、互動式 HTML 報告產出與發布作業。
+
+---
+
+### 🌐 公開訪問 URL
+- **日報公開連結**：[https://wisdom925.github.io/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html](https://wisdom925.github.io/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html)
+- **報告首頁索引**：[https://wisdom925.github.io/html-report-skill/](https://wisdom925.github.io/html-report-skill/)
+
+---
+
+### 📊 2026-09-02 市場核心焦點速覽
+
+1. **大盤表現與市場寬度修復**：
+   - **標普500指數 (^GSPC)**：收漲 **+0.46%** 報 7,666.60 點（[SPY](file:///Users/wisdom/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html) 收報 $765.16 / +0.44%），成功反包前一日跌幅，站穩 20 日均線。
+   - **納斯達克綜合指數 (^IXIC)**：收漲 **+0.45%** 報 26,217.83 點（[QQQ](file:///Users/wisdom/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html) 收報 $709.24 / +0.23%）。
+   - **道瓊工業指數 (^DJI)**：大漲 **+295.07 點 (+0.56%)** 報 53,061.95 點。
+   - **羅素2000小盤股 (^RUT)**：強勢領跑大漲 **+1.13%** 報 2,953.17 點（[IWM](file:///Users/wisdom/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html) +1.18% / 小盤價值 [IWN](file:///Users/wisdom/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html) +1.41%），市場寬度顯著擴散。
+   - **費城半導體指數 (^SOX)**：收漲 **+0.45%** 報 11,339.25 點（[SMH](file:///Users/wisdom/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html) 大漲 +0.96%）。
+   - **恐慌指數 (^VIX)**：重挫 **-6.98%** 回落至 15.20 點，避險情緒大幅消退。
+
+2. **核心催化劑與主線亮點**：
+   - **戴爾科技（DELL）狂飆 +15.81%**：爆表 AI 伺服器出貨量與創紀錄積壓訂單粉碎 AI Capex 放緩疑慮，收在 $492.20 創歷史新高，帶動算力產業鏈全面復甦。
+   - **輝達（NVDA）強勁反彈 +3.21%**：守穩前日支撐強勁回升至 $224.41，盤中高見 $227.95。
+   - **Meta（META）盤中突破 $600 大關**：終場大漲 **+2.47%** 收報 $592.85 續創歷史新高。
+   - **現貨黃金（GC=F）暴漲近 2% 破 $4,430**：原物料板塊（[XLB](file:///Users/wisdom/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html) +1.69%）勇奪標普 11 大板塊冠軍。
+   - **核電電力基建雙雄創歷史天價**：[Vistra (VST)](file:///Users/wisdom/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html) 暴漲 **+3.90%** 報 $143.46，[Constellation (CEG)](file:///Users/wisdom/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html) 大漲 **+3.47%** 報 $290.04。
+   - **軟體 SaaS 持續去估值分化**：Palo Alto（PANW -9.28%）與 Palantir（PLTR -5.81%）回調，但甲骨文（ORCL +3.13%）受雲端算力大單支撐逆勢飆升。
+
+---
+
+### 📁 本次更新與產出檔案
+- **日報 HTML 檔案**：[`reports/2026-09-02-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html)
+- **清單索引檔案**：[`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+- **行情快照數據**：[`scratch/quotes_2026-09-02.json`](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-09-02.json)
+- **報告生成腳本**：[`generate_report_20260902.py`](file:///Users/wisdom/html-report-skill/generate_report_20260902.py)
+- **行情爬取腳本**：[`scratch/query_quotes_2026-09-02.py`](file:///Users/wisdom/html-report-skill/scratch/query_quotes_2026-09-02.py)
+
+所有變更均已提交並成功推送至遠端 Git 倉庫 `origin/main`。
+No report artifact changes to commit.
+===== 2026-09-03 08:08:35 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-09-02-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main a603146] report: 美股收盤日報備援｜2026-09-02
+ 2 files changed, 1306 insertions(+)
+ create mode 100644 reports/2026-09-02-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   2f92be7..a603146  main -> main
+===== 2026-09-04 08:00:47 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
