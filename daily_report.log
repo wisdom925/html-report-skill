@@ -3387,3 +3387,61 @@ To https://github.com/wisdom925/reports.git
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+已嚴格依據 [`daily_report_prompt.md`](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的架構規範與格式要求，針對美股交易日 **2026-09-08（週二收盤）** 生成並發布完整的《美股收盤日報》。
+
+---
+
+### 🌐 公開報告 URL
+
+- **線上公開預覽網址**：  
+  https://wisdom925.github.io/html-report-skill/reports/2026-09-08-us-stock-closing-daily-report.html
+
+- **本地生成檔案**：  
+  - 報告 HTML：[`reports/2026-09-08-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-09-08-us-stock-closing-daily-report.html)  
+  - 清單索引：[`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)  
+  - 當日行情快照：[`scratch/quotes_2026-09-08.json`](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-09-08.json)  
+  - 生成腳本：[`generate_report_20260908.py`](file:///Users/wisdom/html-report-skill/generate_report_20260908.py)
+
+---
+
+### 📊 2026-09-08 核心市況精華摘要
+
+1. **大盤表現與極致分化**：
+   - **道瓊工業指數 (^DJI)**：大跌 **-628.18 點（-1.18%）** 收於 52,786.07 點，主要受醫療保健（XLV -2.52%）遭巨額拋售與金融（XLF -1.38%）獲利回吐拖累。
+   - **標普500指數 (^GSPC)**：下跌 **-45.08 點（-0.58%）** 收報 7,673.52 點，回測 20 日均線（約 7,660 點）支撐。
+   - **納斯達克綜合指數 (^IXIC)**：微跌 **-85.58 點（-0.32%）** 收報 26,421.41 點；納指 100（QQQ -0.08%）收在平盤附近，半導體與 AI 基建強勢撐盤。
+   - **費城半導體指數 (^SOX)**：**逆市大暴走！**狂飆 **+152.61 點（+1.30%）** 收報 11,887.87 點；SOXX 暴漲 **+1.64%**，SMH 大漲 **+1.19%**。
+   - **VIX 恐慌指數**：收報 **15.72**（微升 +2.75%），市場未現系統性流動性恐慌。
+
+2. **市場主線與異動焦點**：
+   - **AMD 破天荒突破 $500**：超微半導體（AMD）暴漲 **+5.90%** 報 **$505.74**，創歷史新高，投行全面上調 MI350/MI400 加速器出貨與市佔預期。
+   - **光通訊史詩級噴發**：Lumentum（LITE）狂飆 **+11.04%** 報 **$978.53** 直衝千元，Coherent（COHR）大漲 **+7.10%** 破 **$300** 大關（$301.88）。
+   - **AI 電力基建全線刷天價**：重電設備伊頓（ETN +2.75% $422.13）、液冷散熱 Vertiv（VRT +3.67% $290.83）、發電巨頭 Vistra（VST +1.62% $151.72）全數刷歷史天價；清潔核電 CEG 守在 $299.05 高位。
+   - **油價大漲推升能源奪冠**：WTI 原油暴漲 **+3.43%** 突破 **$94.60/桶**，帶動能源板塊（XLE +1.11%）榮登 11 大行業冠軍。
+   - **軟體 SaaS 獲利了結**：NOW（-4.99%）、CRM（-3.90%）、ADBE（-3.47%）延續回調；但甲骨文（ORCL +2.36% 報 $162.52）在盤後發布 Q1 財報前連續四日放量搶籌。
+
+3. **報告實裝功能**：
+   - 完整涵蓋 **0 至 15 個標準章節**。
+   - **Chart.js 動態長條圖**：視覺化對比各大指數與關鍵 ETF 漲跌幅。
+   - **Mermaid 盤中時間線**：完整復盤盤前、開盤、午盤與尾盤博弈核心驅動。
+   - **純 CSS 分頁標籤 (Tabs)**：流暢切換 4 個宏觀面向（債券殖利率、Fed 降息機率、大宗加密、重要經濟數據）。
+   - **Vanilla JS 互動表格**：支援即時即打即搜尋與表頭正反向點擊排序（板塊排行表與 23 隻核心個股追蹤表）。
+   - **視覺化風險矩陣與折疊收合 (Details)**：層次分明、支援深淺色切換（Dark Mode）與響應式佈局。
+No report artifact changes to commit.
+===== 2026-09-09 08:05:35 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-09-08-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main 30727ab] report: 美股收盤日報備援｜2026-09-08
+ 2 files changed, 1306 insertions(+)
+ create mode 100644 reports/2026-09-08-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   786945d..30727ab  main -> main
+===== 2026-09-10 08:00:15 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+I have launched the quote retrieval process for market date 2026-09-09 and am waiting for the remaining data to be fetched and saved.
+Fetching market quotes for the 2026-09-09 close...
+Waiting for quotes fetch task to complete...
