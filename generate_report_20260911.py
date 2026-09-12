@@ -44,6 +44,8 @@ iwm_color = "text-emerald-600 dark:text-emerald-400 font-bold" if iwm_pct >= 0 e
 soxx_color = "text-emerald-600 dark:text-emerald-400 font-bold" if soxx_pct >= 0 else "text-rose-500 font-bold"
 smh_color = "text-emerald-600 dark:text-emerald-400 font-bold" if smh_pct >= 0 else "text-rose-500 font-bold"
 vix_color = "text-rose-500 font-bold" if vix_pct >= 0 else "text-emerald-600 dark:text-emerald-400 font-bold"
+igv_color = "text-emerald-600 dark:text-emerald-400 font-bold" if igv_pct >= 0 else "text-rose-500 font-bold"
+xlk_color = "text-emerald-600 dark:text-emerald-400 font-bold" if xlk_pct >= 0 else "text-rose-500 font-bold"
 
 spy_pct_color = '#10b981' if spy_pct >= 0 else '#f43f5e'
 qqq_pct_color = '#10b981' if qqq_pct >= 0 else '#f43f5e'
@@ -1220,11 +1222,13 @@ replacements = {
     "[SMH_PCT_COLOR]": smh_pct_color,
     
     "[XLK_PRICE]": get_val("XLK", "price"),
+    "[XLK_COLOR]": xlk_color,
     "[XLK_PCT_RAW]": f"{xlk_pct:.2f}",
     "[XLK_PCT_COLOR]": xlk_pct_color,
     
     "[IGV_PRICE]": get_val("IGV", "price"),
     "[IGV_PCT]": get_val("IGV", "pct"),
+    "[IGV_COLOR]": igv_color,
     "[IGV_PCT_RAW]": f"{igv_pct:.2f}",
     "[IGV_PCT_COLOR]": igv_pct_color,
     
