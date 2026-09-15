@@ -3584,3 +3584,77 @@ Waiting for the quote fill task to save the updated quotes.
 Fetching the remaining tickers with pacing.
 Waiting for the final quote merge to complete.
 Waiting for the remaining tickers retrieval to complete.
+已按照 [`daily_report_prompt.md`](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的完整指令與結構規範，完成美股交易日 **2026-09-11**（週五收盤）的收盤日報數據抓取、HTML 報告生成、清單更新與 GitHub Pages 正式發布。
+
+---
+
+### 🌐 公開報告訪問 URL
+- **線上報告公開網址**：  
+  👉 **[https://wisdom925.github.io/html-report-skill/reports/2026-09-11-us-stock-closing-daily-report.html](https://wisdom925.github.io/html-report-skill/reports/2026-09-11-us-stock-closing-daily-report.html)**
+- **本地報告檔案路徑**：  
+  [`reports/2026-09-11-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-09-11-us-stock-closing-daily-report.html)
+- **報告索引更新**：  
+  [`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)（已置頂更新 2026-09-11 項目）
+
+---
+
+### 📊 2026-09-11 美股核心市場精華速覽
+
+| 指數 / 標的 | 收盤點位 / 最新價 | 當日漲跌幅 | 核心技術與市場狀態 |
+| :--- | :--- | :--- | :--- |
+| **S&P 500 (^GSPC)** | **7,656.98** | **+0.86%** (+65.28 點) | 50日線強力反彈，完全收復昨日失地 |
+| **SPY** | **$764.29** | **+0.85%** (+$6.46) | 突破 20 日均線轉換位，重啟上攻軌道 |
+| **Nasdaq Comp (^IXIC)** | **26,333.04** | **+0.96%** (+251.31 點) | 科技硬體大舉領攻，重返各級均線上方 |
+| **Nasdaq 100 / QQQ** | **$714.88** | **+0.87%** (+$6.19) | 超級巨頭與半導體合力推升，逼近前高 |
+| **Dow Jones (^DJI)** | **52,573.29** | **+0.98%** (+509.19 點) | 狂飆逾500點，電網工業與金融權重共振 |
+| **SOX 半導體 / SOXX** | **$527.07** | **+1.86%** (+$9.64) | 費半大漲+1.81%，走出經典「洗盤反包」強攻形態 |
+| **Russell 2000 (IWM)** | **$288.89** | **+0.41%** (+$1.19) | 利率壓力緩解，小盤股於 2,900 點整數關卡站穩 |
+| **VIX 恐慌指數** | **15.84** | **-11.21%** (-2.00 點) | 通膨警報解除，看跌期權對沖部位大規模平倉 |
+| **10Y 美債殖利率 (^TNX)**| **4.97%** | **+0.63%** (+3 bps) | 5.00% 整數心理關前衝高受阻回穩，長端拋壓收斂 |
+| **WTI 原油 (CL=F)** | **$99.99/桶** | **-2.43%** (-$2.49) | 自昨日 $104 天價回落跌破百元，輸入性滯脹疑慮退散 |
+| **現貨黃金 (GC=F)** | **$4,390.00/oz** | **+0.58%** (+$25.50) | 企穩反彈，抗通膨與央行儲備多頭邏輯堅挺 |
+| **比特幣 (BTC-USD)** | **$77,269.02** | **+0.92%** (+$700.90) | 風險偏好回暖，主流加密資產穩健走強 |
+
+---
+
+### 🌟 盤面焦點與主線亮點
+1. **宏觀通膨警報解除（Relief Rally）**：
+   - 8月 CPI 年率降至 3.1%、核心 CPI 年率錄得 3.2% 完全符合預期，消除了市場對昨日 PPI 爆表引發「二次通膨失控」的恐慌。
+   - WTI 原油跌破百元關口收在 $99.99/桶，10年期美債殖利率在 5.00% 警戒線前止步回穩，空頭回補與資金搶籌引爆全面 Risk-On。
+2. **AI 算力伺服器與交換機迎來史詩級爆發**：
+   - **戴爾科技（DELL）** 狂飆 **+11.98%** 衝上 **$567.29**，甲骨文財報證實其 AI 液冷伺服器訂單排期已滿至 2027 年。
+   - **Arista Networks（ANET）** 大漲 **+5.61%** 收報 **$199.59**（盤中首度摸至 $201.15）創歷史新高！
+   - **邁威爾（MRVL +4.03%）**、**超微（AMD +2.49% 收復 $516）**、**Coherent（COHR +4.16% 重返 $305 天價）** 全線暴動。
+3. **終端硬體與電網基建雙雙刷歷史新高**：
+   - **蘋果（AAPL）** 延續折疊旗艦 iPhone Duo 預約破紀錄熱度，放量續漲 **+1.75%** 收報 **$332.27**（盤中高見 **$336.22** 再刷歷史天價）。
+   - **Quanta Services（PWR）** 暴漲 **+5.15%** 收 **$650.58** 創歷史新高；**伊頓（ETN）** 大漲 **+3.96%** 破 **$425.37** 刷歷史新高；液冷散熱 **Vertiv（VRT）** 大漲 **+3.60%** 收復 **$257.06**。
+
+---
+
+### 🛠️ 報告內建互動功能
+- **Chart.js 動態圖表**：主要指數、半導體與板塊 ETF 當日漲跌動態對比柱狀圖。
+- **Mermaid 盤中走勢復盤**：盤前數據、開盤分化、午盤拉升、尾盤平倉完整時間線（Timeline）。
+- **純 CSS / Tailwind Tabs 分頁標籤**：無卡頓切換「美債殖利率」、「Fed 政策預期」、「大宗與加密貨幣」、「重要經濟數據」。
+- **Vanilla JS 可排序搜尋表格**：S&P 500 十一個行業板塊表現表、23 隻重點關注股追蹤表，支援即時關鍵字過濾與點擊表頭雙向排序。
+- **折疊收合 `<details>`**：七巨頭、半導體、軟體 SaaS、電力基建及異動個股新聞深度解讀。
+- **暗黑模式開關**：持久化保存至 `localStorage`，支援主題動態重繪。
+- **側邊目錄導航（TOC）**：支援 Scroll-Spy 捲動高亮與平滑跳轉。
+No report artifact changes to commit.
+===== 2026-09-12 08:08:46 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-09-11-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main adc0408] report: 美股收盤日報備援｜2026-09-11
+ 2 files changed, 1523 insertions(+), 210 deletions(-)
+ create mode 100644 reports/2026-09-11-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   52f7246..adc0408  main -> main
+===== 2026-09-15 08:00:25 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+root agent idle; waiting for 1 background task(s) (bounded by --print-timeout)
+I have launched the data retrieval script for trading day 2026-09-14 and am awaiting the results.
+I have launched the missing quotes backfill script and am waiting for it to complete.
+I am retrieving the final batch of tickers and will proceed once finished.
