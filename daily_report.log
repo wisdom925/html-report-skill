@@ -3658,3 +3658,57 @@ root agent idle; waiting for 1 background task(s) (bounded by --print-timeout)
 I have launched the data retrieval script for trading day 2026-09-14 and am awaiting the results.
 I have launched the missing quotes backfill script and am waiting for it to complete.
 I am retrieving the final batch of tickers and will proceed once finished.
+已依照 `daily_report_prompt.md` 的指令、結構與互動式 HTML 規範，完成美股交易日 **2026-09-14** 的《美股收盤日報》產出、清單更新與發布。
+
+---
+
+### 🌐 公開報告 URL
+👉 **[美股收盤日報｜2026-09-14 線上互動報告](https://wisdom925.github.io/html-report-skill/reports/2026-09-14-us-stock-closing-daily-report.html)**
+
+* 報告檔案路徑：[`reports/2026-09-14-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-09-14-us-stock-closing-daily-report.html)
+* 索引資訊清單：[`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+* 生成與發布腳本：[`generate_report_20260914.py`](file:///Users/wisdom/html-report-skill/generate_report_20260914.py)
+
+---
+
+### 📊 2026-09-14 市場核心焦點復盤
+
+1. **超級風格大輪動（Hardware to Software Rotation）**：
+   - **底層半導體與 AI 電網重電遭集中獲利了結**：費城半導體指數（SOX）單日重挫 **-5.86%**（SOXX **-5.63%**、SMH **-4.75%**）。前期連續暴漲的光通訊 **Coherent（COHR -12.73%）**、**邁威爾（MRVL -7.32%）**、**ARM（-9.74%）**、**ASML（-7.25%）** 以及電力基建龍頭 **GE Vernova（GEV -8.62%）**、**伊頓（ETN -7.57%）**、**核電 Constellation（CEG -7.09%）** 全線遭遇多頭主力鎖定利潤回吐。
+   - **軟體 SaaS 與網路安全爆發史詩級逼空**：科技軟體 ETF（IGV）放量暴漲 **+5.04%**！受企業級 Agentic AI 與身分安全需求爆發激勵，**CrowdStrike（CRWD）狂飆 +13.85%**，**Palo Alto Networks（PANW）暴漲 +13.09%**，**ServiceNow（NOW）大漲 +7.41%** 創歷史新高，**Adobe（ADBE）續漲 +5.30%**；**Salesforce（CRM）** 在 Dreamforce 2026 全球大會發布 Agentforce 2.0 激勵下大漲 **+4.73%**。
+
+2. **萬億科技巨頭展現極致防禦價值**：
+   - **微軟（MSFT）** 逆勢上漲 **+1.97%**，收盤正式攻克 **$505.41** 創歷史新高！38GW 資料中心電網規劃奠定長期增長中樞。
+   - **Meta（META）** 續漲 **+2.71%**，收報 **$665.60** 再刷歷史天價！
+   - **谷歌（GOOGL）** 大漲 **+3.22%** 衝上 **$349.39** 逼近 $350 整數關卡；**蘋果（AAPL）** 穩守 **$333.08**（+0.24%）天價。
+   - 巨頭強勢護盤抵消了晶片股下挫衝擊，**標普 500 僅微跌 -0.48%**（報 7,619.98 點）、**納指微跌 -0.56%**（報 26,186.41 點）、**道瓊微跌 -0.29%**（報 52,421.20 點），**等權標普 RSP 逆勢微漲 +0.07%**。
+
+3. **宏觀環境與利率**：
+   - **基準 10 年期美債殖利率** 平穩回落至 **4.96%**（-1 bp），牢牢壓制在 5.00% 警戒線下方。
+   - **CME FedWatch**：市場靜待本週（9/15-16）FOMC 利率決議，市場對 9 月降息 25 bps 預期機率維持在 89.2% 高位。
+   - **WTI 原油** 反彈 **+2.07%** 收報 **$102.12/桶**；**現貨黃金** 正常休整回踩至 **$4,328.90/oz**（-1.81%）；**比特幣** 突破 **$78,200** 創波段新高。
+
+---
+
+### 🛠️ 本期日報內建互動規格
+- **Chart.js 動態柱狀圖**：SPY、QQQ、DIA、IWM、SMH、SOXX、IGV、XLK 當日漲跌幅對比。
+- **Mermaid 盤中時間線（Timeline）**：盤前、開盤、午盤、尾盤巨型板塊切換大事記。
+- **純 CSS / Tailwind Tabs 分頁標籤**：無縫切換「美債收益率」、「Fed 政策預期」、「大宗與加密貨幣」、「重要經濟數據」。
+- **Vanilla JS 可排序搜尋表格**：S&P 500 十一個行業板塊表、23 檔核心追蹤股清單（支援關鍵字過濾與點擊表頭雙向排序）。
+- **折疊收合 `<details>`**：七巨頭、半導體硬體、SaaS 軟體資安、AI 電力基建深入個股分析。
+- **主題切換與目錄導航**：支援暗黑模式開關與 Scroll-Spy 側邊目錄捲動高亮。
+No report artifact changes to commit.
+===== 2026-09-15 08:07:41 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-09-14-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main c81a7d7] report: 美股收盤日報備援｜2026-09-14
+ 2 files changed, 1308 insertions(+)
+ create mode 100644 reports/2026-09-14-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   adc0408..c81a7d7  main -> main
+===== 2026-09-16 08:00:02 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
