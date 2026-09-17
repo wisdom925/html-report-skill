@@ -3712,3 +3712,58 @@ To https://github.com/wisdom925/reports.git
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+已依據 [`daily_report_prompt.md`](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的美股收盤日報指令、結構規範與高標準互動式 HTML 格式，針對美股交易日 **2026-09-15** 完成最新日報的數據擷取、報告生成、清單更新與 Git 推送發布。
+
+---
+
+### 🌐 公開報告 URL
+👉 **[美股收盤日報｜2026-09-15 線上互動報告](https://wisdom925.github.io/html-report-skill/reports/2026-09-15-us-stock-closing-daily-report.html)**
+
+* 本地 HTML 報告路徑：[`reports/2026-09-15-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-09-15-us-stock-closing-daily-report.html)
+* 歷史索引清單更新：[`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+* 自動化編譯與發布腳本：[`generate_report_20260915.py`](file:///Users/wisdom/html-report-skill/generate_report_20260915.py)
+
+---
+
+### 📊 2026-09-15 美股盤面核心精華摘要
+
+1. **宏觀環境與大宗商品異動**：
+   * **WTI 原油狂飆破百元**：受到中東地緣供應擔憂與原油庫存大幅下降刺激，WTI 原油期貨狂飆 **+3.92%** 衝上 **$105.36/桶**（布蘭特原油上漲 **+2.63%** 至 **$108.46/桶**），推動標普 500 能源板塊（XLE **+2.17%**）奪得全市場第一。
+   * **美債殖利率重返 5.00% 警戒線**：基準 10 年期美債殖利率跳升至 **5.00%**（+4 bps），使得利率敏感型的公用事業（XLU **-1.20%**）與非必需消費（XLY **-1.25%**）承壓。
+   * **FOMC 議息會議首日**：聯準會 9 月會議正式開幕，CME FedWatch 顯示 9 月降息 25 bps 機率達 **88.5%**，市場焦點全力轉向週三下午公佈的點陣圖（Dot Plot）與鮑威爾記者會。
+
+2. **大盤走勢與關鍵指數**：
+   * **標普 500 指數 (^GSPC)**：收報 **7,585.73 點**（**-0.45%**，SPY $757.39 **-0.46%**），精準守穩 50 日均線（7,582 點）防線。
+   * **道瓊工業指數 (^DJI)**：收報 **52,093.11 點**（**-0.63%**，DIA $521.23 **-0.62%**）。
+   * **納斯達克綜合指數 (^IXIC)**：收報 **25,981.57 點**（**-0.78%**，QQQ $704.54 **-0.65%**）。
+   * **羅素 2000 小盤股 (^RUT)**：收報 **2,870.29 點**（**-0.76%**，IWM $285.72 **-0.76%**）。
+   * **VIX 恐慌指數**：收報 **17.20 點**（微升 +0.58%），避險情緒極度理性克制。
+
+3. **板塊風格與重點個股**：
+   * **半導體晶片超跌企穩修復**：費城半導體指數（SOX）在週一暴跌近 6% 後迅速止血翻紅 **+0.40%**（SOXX **+0.29%**、SMH **+0.11%**）。**超微（AMD）** 放量大漲 **+2.19%** 重新站上 **$504.20** 大關；**戴爾（DELL）** 續漲 **+1.73%** 達 **$543.51**；**Arista Networks（ANET）** 大漲 **+2.68%** 逼近 $200；**邁威爾（MRVL）** 反彈 **+1.32%**；**輝達（NVDA）** 微漲 **+0.57%** 守穩 $212.17；散熱液冷龍頭 **Vertiv（VRT）** 止跌反攻 **+1.20%** 報 $240.24。
+   * **科技巨頭天花板**：**Meta（META）** 逆天續漲 **+0.70%** 收報 **$670.24**，再度刷新收盤歷史新天價！微軟（MSFT **-1.64%** 報 $497.12）高位回踩整理；蘋果（AAPL **-0.52%** 報 $331.34）維持高位盤整。
+   * **資安板塊逼空狂歡延續**：**CrowdStrike（CRWD）** 在週一大漲近 14% 後，今日再度放量飆漲 **+3.02%** 衝上 **$242.49**，Palo Alto Networks（PANW **+0.31%**）維持新高整固。
+
+---
+
+### 🛠️ 本期日報內建 Premium 互動功能
+* **動態圖表**：使用 Chart.js 生成主要指數（SPY/QQQ/DIA/IWM/SMH/SOXX/IGV/XLK）的當日漲跌對比柱狀圖。
+* **盤中時間線**：Mermaid.js 視覺化呈現盤前原油飆升、開盤晶片超跌反攻、午盤債市博弈至尾盤收官的大事記。
+* **純 CSS 分頁標籤**：無縫切換「美債收益率」、「Fed 政策預期」、「大宗與加密」、「重要經濟數據」。
+* **Vanilla JS 即時檢索與可排序表格**：涵蓋 S&P 500 十一個行業板塊表，以及 23 檔核心追蹤股（NVDA、AMD、AVGO、MRVL、GOOGL、MSFT、META、AMZN、ORCL、CRM、NOW、SNOW、ADBE、PLTR、LITE、COHR、ANET、FLNC、OKLO、VST、CEG、ETN、VRT）的 9 大交易決策標籤與支撐壓力位。
+* **折疊收合 (`<details>`) & 主題導航**：七巨頭、半導體硬體、SaaS 軟體、AI 電力基建模組化排版，支援暗黑模式切換與側邊目錄目錄監聽（Scroll Spy）。
+No report artifact changes to commit.
+===== 2026-09-16 08:05:36 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-09-15-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main 6d9cd2f] report: 美股收盤日報備援｜2026-09-15
+ 2 files changed, 1313 insertions(+)
+ create mode 100644 reports/2026-09-15-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   c81a7d7..6d9cd2f  main -> main
+===== 2026-09-17 08:00:41 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
