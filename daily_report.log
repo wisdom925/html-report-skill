@@ -3884,3 +3884,56 @@ WARN: command failed (attempt 2/4, exit 1); retrying in 30s: git pull origin mai
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+已依據 [`daily_report_prompt.md`](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的完整指令與排版規範，針對美股交易日 **2026-09-18**（週五收盤・季度四巫日）完成最新美股收盤日報的生成與發布。
+
+---
+
+### 🌐 公開報告 URL
+👉 **[美股收盤日報｜2026-09-18 (四巫日超級大分化！半導體狂飆領跑)](https://wisdom925.github.io/html-report-skill/reports/2026-09-18-us-stock-closing-daily-report.html)**
+
+---
+
+### 📋 執行與產出成果確認
+
+1. **工作目錄限制**：全程在目前儲存庫 [`/Users/wisdom/html-report-skill`](file:///Users/wisdom/html-report-skill) 內完成，未寫入 `~/reports`。
+2. **產出檔案**：
+   - 報告主體：[`reports/2026-09-18-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-09-18-us-stock-closing-daily-report.html)（具備深淺色切換、Chart.js 動態長條圖、Mermaid 時間線流程圖、分頁標籤 Tabs、Vanilla JS 即時搜尋與欄位排序功能、折疊收合 details、視覺化風險矩陣表格等完整功能）。
+   - 報表索引：已更新 [`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)，將 2026-09-18 置於首位。
+   - 歷史引用：報表報價資料已結構化歸檔至 [`scratch/quotes_2026-09-18.json`](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-09-18.json)。
+3. **版本控制與遠端發布**：
+   - 變更已透過 `publish.py` 納入 Git 提交（Commit: `7a1cee3`）並推播至 GitHub 遠端 `origin/main`。
+
+---
+
+### 📊 2026-09-18 市場核心精華摘要
+
+| 指數 / 標的 | 收盤點位 / 最新價 | 當日漲跌幅 | 核心盤面狀態與技術特徵 |
+| :--- | :--- | :--- | :--- |
+| **S&P 500 (^GSPC)** | **7,650.50** | **+0.17%** | 窄幅微漲，連續兩日維持在歷史高位平台，守穩 20 日均線 |
+| **Nasdaq (^IXIC)** | **26,522.55** | **+0.39%** | 晶片與大科技護盤，逼近歷史新高，多頭均線多頭排列 |
+| **Dow Jones (^DJI)** | **51,682.64** | **-0.18%** | 受巴菲特交棒震撼金融股及重工業拖累，創 3 月以來最大單週跌幅 |
+| **SOX 半導體指數** | **11,845.20** | **+1.15%** | **全市場主攻火車頭！** 連兩日大漲形成強勢突破主升浪 |
+| **Russell 2000 (IWM)** | **$284.75** | **-1.13%** | 美債 10 年期殖利率回彈至 5.00%，中小盤利率敏感股承壓 |
+| **VIX 恐慌指數** | **14.81** | **-3.96%** | 跌破 15 整數關卡，四巫日海量平倉交割未引發流動性恐慌 |
+| **超微 (AMD)** | **$559.82** | **+6.67%** | **暴漲超 $35！狂飆突破 $559 歷史神話天價！** 兩日大漲近 14% |
+| **輝達 (NVDA)** | **$222.27** | **+1.34%** | **突破 $222 創歷史新高**，2027 年銷售翻倍利多持續發酵 |
+| **谷歌 (GOOGL)** | **$349.54** | **+0.63%** | 盤中一度突破 **$351.20** 歷史里程碑，Gemini 2.5 商業化推進 |
+| **現貨黃金 (GC=F)** | **$4,415.90/oz** | **+1.33%** | 暴漲近 $58 突破 $4,415 刷新歷史天價，避險買盤強勁 |
+| **WTI 原油 (CL=F)** | **$95.47/桶** | **-3.66%** | 自百元上方連跌兩天至 $95.47，實質大幅舒緩實體經濟通膨成本 |
+No report artifact changes to commit.
+===== 2026-09-19 08:10:34 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-09-18-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main 09f9e07] report: 美股收盤日報備援｜2026-09-18
+ 2 files changed, 1290 insertions(+)
+ create mode 100644 reports/2026-09-18-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   51f3aca..09f9e07  main -> main
+===== 2026-09-22 08:00:04 +0800 daily_us_market_report start =====
+fatal: unable to access 'https://github.com/wisdom925/html-report-skill.git/': Failed to connect to github.com port 443 after 75017 ms: Couldn't connect to server
+WARN: command failed (attempt 1/4, exit 1); retrying in 15s: git pull origin main
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
