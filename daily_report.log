@@ -3937,3 +3937,42 @@ WARN: command failed (attempt 1/4, exit 1); retrying in 15s: git pull origin mai
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+已依據 [`daily_report_prompt.md`](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的完整指令與排版規範，針對美股交易日 **2026-09-21**（週一收盤・晶片狂歡與主升浪爆發）完成最新美股收盤日報的生成與發布。
+
+---
+
+### 🌐 公開報告 URL
+👉 **[美股收盤日報｜2026-09-21 (超微破$610市值破兆、費半暴漲4.3%、標普納指雙創歷史新高)](https://wisdom925.github.io/html-report-skill/reports/2026-09-21-us-stock-closing-daily-report.html)**
+
+---
+
+### 📋 執行與產出成果確認
+
+1. **工作目錄限制**：全程在目前儲存庫 [`/Users/wisdom/html-report-skill`](file:///Users/wisdom/html-report-skill) 內完成，未寫入 `~/reports`。
+2. **產出檔案**：
+   - 報告主體：[`reports/2026-09-21-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-09-21-us-stock-closing-daily-report.html)（具備深淺色切換、Chart.js 動態長條圖、Mermaid 時間線流程圖、分頁標籤 Tabs、Vanilla JS 即時搜尋與欄位排序功能、折疊收合 details、視覺化風險矩陣表格等完整功能）。
+   - 報表索引：已更新 [`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)，將 2026-09-21 置於首位。
+   - 歷史引用：報表報價資料已結構化歸檔至 [`scratch/quotes_2026-09-21.json`](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-09-21.json)。
+3. **版本控制與遠端發布**：
+   - 變更已透過 `publish.py` 納入 Git 提交並推播至 GitHub 遠端 `origin/main`。
+
+---
+
+### 📊 2026-09-21 市場核心精華摘要
+
+| 指數 / 標的 | 收盤點位 / 最新價 | 當日漲跌幅 | 核心盤面狀態與技術特徵 |
+| :--- | :--- | :--- | :--- |
+| **S&P 500 (^GSPC)** | **7,774.11** | **+1.62%** | 放量大長陽突破，站上7,700點大關續創歷史最高收盤紀錄 |
+| **Nasdaq (^IXIC)** | **27,131.25** | **+2.30%** | 狂飆逾608點，首度攻破27,000點歷史大關，晶片板塊主升浪爆發 |
+| **Dow Jones (^DJI)** | **52,102.08** | **+0.81%** | 反彈大漲419點，重返52,100點上方，收復上週五全部跌幅 |
+| **SOX 半導體指數** | **12,354.50** | **+4.30%** | **全市場主升浪火車頭！** 暴漲逾509點，創單日最大漲幅之一 |
+| **Russell 2000 (IWM)** | **$289.20** | **+1.56%** | 美債10年期殖利率回落至4.95%，中小盤利率敏感股全面修復 |
+| **VIX 恐慌指數** | **14.15** | **-4.46%** | 大跌至14.15點，恐慌溢價完全出清，做多信心極度高昂 |
+| **超微 (AMD)** | **$610.20** | **+9.00%** | **狂飆大漲50美元！破$610歷史新天價！市值正式破1兆美元大關！** |
+| **輝達 (NVDA)** | **$229.80** | **+3.39%** | **大漲近$8逼近$230天價**，2027年銷售翻倍效應引發產業鏈搶購 |
+| **微軟 (MSFT)** | **$504.20** | **+2.11%** | **突破$500整數心理里程碑！** 企業級Copilot與Azure AI成長強勁 |
+| **Palantir (PLTR)** | **$182.40** | **+3.52%** | **突破$180歷史大關**，AIP商業客戶指數級爆發 |
+| **WTI 原油 (CL=F)** | **$93.20/桶** | **-2.38%** | 跌破$94收在$93.20，大幅緩解市場二次通膨擔憂 |
+| **現貨黃金 (GC=F)** | **$4,435.00/oz** | **+0.43%** | 續漲突破$4,435刷新歷史天價，長線抗通膨與主權避險買盤堅定 |
+
+===== 2026-09-22 08:06:00 +0800 daily_us_market_report end =====
