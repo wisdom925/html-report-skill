@@ -3976,3 +3976,56 @@ Already up to date.
 | **現貨黃金 (GC=F)** | **$4,435.00/oz** | **+0.43%** | 續漲突破$4,435刷新歷史天價，長線抗通膨與主權避險買盤堅定 |
 
 ===== 2026-09-22 08:06:00 +0800 daily_us_market_report end =====
+已依據 [`daily_report_prompt.md`](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的完整規範與格式要求，針對美股交易日 **2026-09-21**（週一收盤）完成最新美股收盤日報的生成與發布。
+
+---
+
+### 🌐 公開報告 URL
+👉 **[美股收盤日報｜2026-09-21 (超微狂飆9%破$610市值破兆、費半暴漲4.3%、標普納指雙創歷史新高)](https://wisdom925.github.io/html-report-skill/reports/2026-09-21-us-stock-closing-daily-report.html)**
+
+---
+
+### 📋 執行與產出確認
+
+1. **工作目錄規範**：全程嚴格限制在目前倉庫 [`/Users/wisdom/html-report-skill`](file:///Users/wisdom/html-report-skill) 內完成，未寫入 `~/reports` 倉庫。
+2. **生成檔案**：
+   - 報告主體：[`reports/2026-09-21-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-09-21-us-stock-closing-daily-report.html)（具備深淺色切換、Chart.js 動態長條圖、Mermaid 走勢時間線、純 CSS 分頁標籤 Tabs、Vanilla JS 即時檢索與欄位排序表格、折疊收合 `<details>` 及視覺化風險矩陣表格等完整功能）。
+   - 報表索引：已更新 [`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)，將 2026-09-21 置頂。
+   - 數據歸檔：市場報價結構化歸檔至 [`scratch/quotes_2026-09-21.json`](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-09-21.json)。
+   - 執行日誌：已同步記錄於 [`daily_report.log`](file:///Users/wisdom/html-report-skill/daily_report.log)。
+3. **版本控制與遠端推送**：
+   - 所有變更已透過 `publish.py` 成功 Commit 並推播至 GitHub 遠端儲存庫 `origin/main`（Commit: `f548f96`、`92700a4`）。
+
+---
+
+### 📊 2026-09-21 市場核心精華復盤
+
+| 指數 / 核心標的 | 收盤點位 / 最新價 | 當日漲跌幅 | 核心盤面狀態與技術特徵 |
+| :--- | :--- | :--- | :--- |
+| **S&P 500 (^GSPC)** | **7,774.11** | **+1.62%** | 放量大長陽突破，站上 7,700 點大關續創歷史最高收盤紀錄 |
+| **Nasdaq (^IXIC)** | **27,131.25** | **+2.30%** | 狂飆逾 608 點，首度攻破 27,000 點歷史大關，晶片主升浪全面爆發 |
+| **Dow Jones (^DJI)** | **52,102.08** | **+0.81%** | 反彈大漲 419 點，重返 52,100 點上方，收復上週五全部跌幅 |
+| **SOX 半導體指數** | **12,354.50** | **+4.30%** | **全市場主攻發動機！** 暴漲逾 509 點，創近期單日最大漲幅之一 |
+| **Russell 2000 (IWM)** | **$289.20** | **+1.56%** | 美債 10 年期殖利率回落至 4.95%，中小盤利率敏感股全面修復 |
+| **VIX 恐慌指數** | **14.15** | **-4.46%** | 單日大跌至 14.15 點，恐慌溢價完全出清，市場做多情緒極端高昂 |
+| **超微 (AMD)** | **$610.20** | **+9.00%** | **全天暴漲逾 50 美元！衝破 $610 天價！市值正式跨越 1 兆美元歷史大關！** |
+| **輝達 (NVDA)** | **$229.80** | **+3.39%** | **大漲近 $8 逼近 $230 天價**，黃仁勳「2027年晶片銷售翻倍」效應持續擴散 |
+| **微軟 (MSFT)** | **$504.20** | **+2.11%** | **放量攻克 $500 歷史整數心理里程碑！** Azure AI 與企業 Copilot 商業化加速 |
+| **Palantir (PLTR)** | **$182.40** | **+3.52%** | **強勢突破 $180 歷史大關**，AIP 商業智慧體簽約持續呈指數級爆發 |
+| **WTI 原油 (CL=F)** | **$93.20/桶** | **-2.38%** | 跌破 $94 關口收在 $93.20，實質性大幅消除市場二次通膨擔憂 |
+| **現貨黃金 (GC=F)** | **$4,435.00/oz** | **+0.43%** | 續漲突破 $4,435 刷新歷史天價，全球長線抗通膨與避險買盤堅定 |
+No report artifact changes to commit.
+===== 2026-09-22 08:05:59 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-09-21-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main 9753be1] report: 美股收盤日報備援｜2026-09-21
+ 2 files changed, 1295 insertions(+)
+ create mode 100644 reports/2026-09-21-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   09f9e07..9753be1  main -> main
+===== 2026-09-23 08:00:19 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
