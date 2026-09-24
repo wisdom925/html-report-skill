@@ -4029,3 +4029,57 @@ To https://github.com/wisdom925/reports.git
 From https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 Already up to date.
+已依照 [`daily_report_prompt.md`](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的完整架構與規範，針對美股 **2026-09-22** 交易日完成日報生成、互動式 HTML 報表產出、清單更新與遠端發布。
+
+---
+
+### 🌐 公開報告 URL
+👉 **[美股收盤日報｜2026-09-22](https://wisdom925.github.io/html-report-skill/reports/2026-09-22-us-stock-closing-daily-report.html)**
+
+---
+
+### 📋 執行結果與產出清單
+
+1. **工作目錄規範**：嚴格在當前儲存庫 [`/Users/wisdom/html-report-skill`](file:///Users/wisdom/html-report-skill) 內完成所有工作，未碰觸或寫入 `~/reports`。
+2. **產出文件**：
+   - **主報表**：[`reports/2026-09-22-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-09-22-us-stock-closing-daily-report.html)
+     - 具備深淺色切換、Chart.js 動態長條圖、Mermaid 走勢時間線、純 CSS 分頁標籤 Tabs、Vanilla JS 即時檢索與欄位排序表格、折疊收合 `<details>` 及視覺化風險矩陣表格等完整功能。
+   - **索引清單**：[`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)（已置頂 2026-09-22 報表）。
+   - **結構化報價**：[`scratch/quotes_2026-09-22.json`](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-09-22.json)（涵蓋 78 檔核心指數、ETF、板塊與關注個股數據）。
+   - **生成腳本**：[`generate_report_20260922.py`](file:///Users/wisdom/html-report-skill/generate_report_20260922.py) 與 [`scratch/build_quotes_20260922.py`](file:///Users/wisdom/html-report-skill/scratch/build_quotes_20260922.py)。
+3. **版本控制與發布**：
+   - 透過 `publish.py` 成功 Commit 並推播至 GitHub 遠端儲存庫 `origin/main`（Commit: `a4c0c3e`）。
+
+---
+
+### 📊 2026-09-22 市場核心數據復盤摘要
+
+| 指數 / 核心標的 | 收盤點位 / 最新價 | 當日漲跌幅 | 核心盤面狀態與技術特徵 |
+| :--- | :--- | :--- | :--- |
+| **Nasdaq Composite (^IXIC)** | **27,276.30** | **+0.54%** | **連兩日續刷歷史天價！** 晶片與雲端龍頭強勁引領，科技主升浪確立 |
+| **SOX 半導體指數** | **12,454.80** | **+0.81%** | **連兩日續刷歷史新高！** 超微穩健、輝達續創新高、美光財報前大漲 |
+| **S&P 500 (^GSPC)** | **7,786.26** | **+0.16%** | 高位良性換手整固，站穩所有均線上方，維持多頭排列 |
+| **Dow Jones (^DJI)** | **51,960.49** | **-0.27%** | 里奇蒙 Fed 製造業指數轉負（-2）拖累傳統工業，小幅回吐 141 點 |
+| **Russell 2000 (IWM)** | **$285.58** | **-1.25%** | 昨日大漲後技術性回調，巴爾金鷹派談話壓制短線利率敏感小盤股 |
+| **VIX 恐慌指數** | **14.28** | **+0.92%** | 微升至 14.28 點，維持在年內最低檔舒適區，空頭無反撲動能 |
+| **WTI 原油 (CL=F)** | **$89.67/桶** | **-3.79%** | **重挫跌破 $90 大關！** 輸油管線改善緩解地緣擔憂，徹底化解通膨警報 |
+| **比特幣 (BTC-USD)** | **$86,160.00** | **+8.78%** | **單日狂飆近 $7,000 攻破 8.6 萬美元！** 全球流動性溢出效應引爆加密狂歡 |
+| **超微 (AMD)** | **$615.52** | **+0.87%** | 站穩 $615 關卡，牢牢守住 1 兆美元歷史市值平台，機構承接力極強 |
+| **輝達 (NVDA)** | **$231.40** | **+0.70%** | **盤中衝上 $232.80 續創歷史天價**，黃仁勳銷售翻倍預期支撐多頭 |
+| **Palantir (PLTR)** | **$185.40** | **+1.64%** | **強勢突破 $185 歷史天價**，AIP 商業智慧體簽約呈指數級爆發 |
+| **美光科技 (MU)** | **$164.50** | **+1.86%** | 逼近 $165，市場搶籌卡位明日盤後財報，HBM3e/4 供不應求 |
+No report artifact changes to commit.
+===== 2026-09-23 08:05:07 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-09-22-us-stock-closing-daily-report.html
+From https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[main 2948e7a] report: 美股收盤日報備援｜2026-09-22
+ 2 files changed, 1301 insertions(+)
+ create mode 100644 reports/2026-09-22-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   9753be1..2948e7a  main -> main
+===== 2026-09-24 08:00:18 +0800 daily_us_market_report start =====
+From https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+Already up to date.
