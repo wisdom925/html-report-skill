@@ -4205,3 +4205,40 @@ To https://github.com/wisdom925/reports.git
 來自 https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 已經是最新的。
+已依據 [`daily_report_prompt.md`](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的美股收盤日報格式與規範，完成交易日 **2026-09-28（週一）** 的最新日報生成、清單更新與公開發布。
+
+---
+
+### 🌐 公開報告 URL
+- **線上報告網址**：[https://wisdom925.github.io/html-report-skill/reports/2026-09-28-us-stock-closing-daily-report.html](https://wisdom925.github.io/html-report-skill/reports/2026-09-28-us-stock-closing-daily-report.html)
+- **目錄清單**：[manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+- **本地 HTML 檔案**：[2026-09-28-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-09-28-us-stock-closing-daily-report.html)
+
+---
+
+### 📊 2026-09-28 市場核心數據與盤面總結
+
+| 指數 / 核心資產 | 收盤價 / 點位 | 當日漲跌幅 | 盤面狀態與技術特徵 |
+| :--- | :--- | :--- | :--- |
+| **標普 500 指數 (^GSPC)** | **7,683.69** | **-0.77%** | **季末資產再平衡技術性回踩！** 守穩 20 日均線（7,624 點）之上，多頭發散結構完好 |
+| **納斯達克綜合指數 (^IXIC)** | **26,820.38** | **-0.92%** | **自歷史天價健康降溫！** 輝達逆勢收紅護盤，高估值浮額良性消化 |
+| **道瓊工業指數 (^DJI)** | **51,481.51** | **-0.67%** | 上週五大漲 440 點後正常整固，聯合健康逆勢走強提供支撐 |
+| **費城半導體指數 (^SOX)** | **12,465.24** | **-1.61%** | ARM 與美光財報前獲利回吐，但台積電 ADR (+0.50%) 與 ASML (+1.58%) 逆勢走高 |
+| **羅素 2000 (IWM)** | **$280.02** | **-0.69%** | 考驗 50 日均線支撐，小盤成長風格抗跌於大型科技巨頭 |
+| **10 年期美債收益率 (^TNX)** | **5.240%** | **+27.2 bps** | **跳升至 5.240% 創波段新高**，長端收益率曲線陡峭化，壓制高估值折現溢價 |
+| **VIX 恐慌指數** | **16.07** | **+8.07%** | 自 13.42 極度低位回升至 16.07，季末避險對沖需求上升，仍遠低於 20 警戒線 |
+| **WTI 原油 (CL=F)** | **$93.24/桶** | **+0.90%** | **守穩 $93.24**，中東地緣產能維護與 OPEC+ 產量自律為油價提供下檔支撐 |
+| **現貨黃金 (GC=F)** | **$4,156.60/oz** | **-3.81%** | **深幅獲利平倉回調**，強勢美元指數重回 101.19 與長端實質殖利率衝高引發多頭獲利了結 |
+| **輝達 (NVDA)** | **$228.86** | **+1.68%** | **逆天改命！全場最大科技定海神針！** 四大 CSP 上修 2027 資本支出，Blackwell Ultra 產能滿載 |
+| **資安雙雄 (PANW / CRWD)** | **$392.09 / $259.25** | **+4.63% / +2.82%** | **全場最強逼空爆發！** 企業 AI 代理安全防護剛需與強烈避險買盤推動放量大漲 |
+| **超微 (AMD)** | **$607.87** | **-3.61%** | 自 $628 天價健康回踩，MI350 部署順暢，牢牢守穩 $600 關卡與 1 兆美元市值 |
+| **Meta (META)** | **$715.62** | **-4.79%** | 上週衝破 $750 歷史天價後遭遇季末對沖基金獲利了結大單，守穩 $710 關鍵支撐 |
+| **美光科技 (MU)** | **$1,053.98** | **-2.61%** | 資金在 9 月 30 日（週三盤後）重磅財報前避險換手，市場緊盯 HBM3e/4 產能溢價 |
+| **AI 核電雙雄 (VST / CEG)** | **$138.02 / $260.43** | **-0.32% / -1.08%** | **極致抗跌神話！** 大盤重挫下幾乎平盤，24/7 直供電核能成為稀缺剛需硬資產 |
+
+---
+
+### 🛠️ 執行成果核對
+1. **工作目錄限制**：全程嚴格於 `/Users/wisdom/html-report-skill` 執行，未寫入 `~/reports` repo。
+2. **完整報告產出**：已產出包含 **Chart.js 動態比較圖表**、**Mermaid 盤中時間線復盤**、**Tabs 宏觀標籤頁**、**Vanilla JS 即時搜尋與升降序排列表格**、**折疊式個股解讀** 及 **視覺化風險矩陣** 的 [2026-09-28-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-09-28-us-stock-closing-daily-report.html)。
+3. **清單更新與遠端推送**：[manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json) 已將 2026-09-28 置頂，並已完成 Git 提交與推送（Commit ID: `bc34475`，提交訊息：`report: 美股收盤日報｜2026-09-28`）。
