@@ -4531,3 +4531,80 @@ To https://github.com/wisdom925/reports.git
 來自 https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 已經是最新的。
+### 美股收盤日報｜2026-10-02 已生成並正式發布
+
+依據 [`daily_report_prompt.md`](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 的規範與格式，已針對美股交易日 **2026-10-02（週五）** 完成實盤數據檢索、報告生成、清單更新與 GitHub Pages 發布作業。
+
+---
+
+### 🌐 公開在線報告 URL
+- **日報公開連結**：  
+  👉 **https://wisdom925.github.io/html-report-skill/reports/2026-10-02-us-stock-closing-daily-report.html**
+
+---
+
+### 📁 本次產出與更新檔案
+1. **日報 HTML 檔**：[`reports/2026-10-02-us-stock-closing-daily-report.html`](file:///Users/wisdom/html-report-skill/reports/2026-10-02-us-stock-closing-daily-report.html)
+2. **報告清單更新**：[`reports/manifest.json`](file:///Users/wisdom/html-report-skill/reports/manifest.json)
+3. **數據檢索與生成腳本**：
+   - [`scratch/query_quotes_2026-10-02.py`](file:///Users/wisdom/html-report-skill/scratch/query_quotes_2026-10-02.py) / [`scratch/quotes_2026-10-02.json`](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-10-02.json)
+   - [`generate_report_20261002.py`](file:///Users/wisdom/html-report-skill/generate_report_20261002.py)
+4. **Git 狀態**：所有變更已在目前儲存庫（`/Users/wisdom/html-report-skill`）完成 commit 並推播至 GitHub `main` 分支（Commit: `003e23d`）。
+
+---
+
+### 📊 2026-10-02 核心市場重點回顧
+
+1. **大盤表現與極致 Risk-On 噴發**：
+   - **費城半導體指數 (^SOX)**：全場王者！狂飆 **+2.40%**（+307.67 點）突破 **13,136.67 點**，歷史首度衝破 13,100 點大關續創歷史新天價！SMH 收漲 **+2.07%**（$630.60），SOXX 大漲 **+2.18%**（$588.90）。
+   - **納斯達克綜合指數 (^IXIC)**：勁揚 **+1.19%**（+319.26 點）收報 **27,190.86 點**。
+   - **納斯達克 100 指數 (^NDX / QQQ)**：大漲 **+1.00%** 報 **30,807.93 點**（QQQ 收報 **$749.58, +1.02%**），盤中突破 31,000 點歷史大關。
+   - **標普 500 指數 (^GSPC / SPY)**：收漲 **+0.73%** 報 **7,722.72 點**（SPY 收報 **$769.64, +0.74%**），直逼歷史新高 7,800 點整數大關。
+   - **道瓊工業指數 (^DJI / DIA)**：上漲 **+0.49%**（+250.40 點）收報 **51,176.96 點**，穩穩站上 51,000 點大關。
+   - **羅素 2000 小盤股 (IWM)**：上漲 **+0.90%** 收在 **$281.52**（指數 ^RUT +0.94% 報 2,832.89 點），顯著跑贏標普 500，市場寬度大幅擴張。
+   - **恐慌指數 (^VIX)**：崩跌 **-6.59%**（-1.08 點）收在 **15.31 點**，避險部位全面瓦解。
+
+2. **核心驅動主線**：
+   - **9 月非農就業大爆冷降溫**：新增非農就業僅 **2.9 萬人**（遠低於預期的 9.0 萬人），失業率微升至 **4.2%**。市場定價就業市場有序降溫（Cooling labor market），徹底消除了聯準會鷹派升息風險，確立金髮女孩防禦性降息防護網。
+   - **特斯拉（TSLA）Q3 交付爆表狂飆**：TSLA 單日大漲 **+4.65%** 衝上 **$370.59**！Q3 全球交付量達到 **486,532 輛**，遠超市場預期的 46.1 萬輛，庫存去化 2.2 萬輛，帶動非必需消費板塊（XLY +1.13%）勇奪標普十一大板塊冠軍！
+   - **半導體與光通訊暴力主升浪**：
+     - ARM 狂飆 **+5.18%** 收報 **$307.49**！
+     - Coherent（COHR）在昨日暴漲 +10.9% 後，今日再度大漲 **+5.59%** 衝上 **$337.04** 創歷史新天價！
+     - Lumentum（LITE）大漲 **+3.79%** 報 **$1,085.42** 續刷歷史高！
+     - 博通（AVGO）暴力大漲 **+3.35%** 報 **$355.14**，戴爾（DELL）大漲 **+3.84%** 報 **$562.52**，ASML 漲 **+3.25%** 報 **$1,867.31**，超微（AMD）大漲 **+2.95%** 報 **$633.91**，台積電 ADR（TSM）大漲 **+2.96%** 報 **$472.78**。
+   - **科技巨頭全面收紅**：谷歌（GOOGL +1.56% 報 $343.50）、亞馬遜（AMZN +1.33% 報 $251.52）、蘋果（AAPL +1.02% 報 $333.69）、微軟（MSFT +0.92% 報 $517.53）、Meta（META +0.30% 報 $728.08）。
+   - **原油自高位回吐**：WTI 原油回跌 **-1.73%** 收在 **$91.26/桶**，有效平息了通膨再起焦慮；美元指數微跌至 101.92。
+
+---
+
+### 🛠 HTML 報告互動功能一覽
+- **動態圖表**：使用 Chart.js 生成 8 大指數與核心 ETF 漲跌幅對比柱狀圖。
+- **盤中時間線**：Mermaid 流程圖完整復盤盤前非農數據與特斯拉交付、早盤跳空、午盤整固與尾盤衝刺。
+- **純 CSS 分頁標籤 (Tabs)**：宏觀 4 大分頁（3.1 美債殖利率、3.2 Fed 降息預期、3.3 美元/大宗/加密、3.4 重磅經濟數據）即時流暢切換。
+- **即時鍵盤搜尋與排序**：S&P 500 十一大板塊表格與 23 檔核心關注股表格均支援 Vanilla JS 欄位升降排序與關鍵字即時篩選。
+- **折疊收合 (`<details>`)**：科技七巨頭、半導體硬體、軟體 SaaS、AI 核電基建分組收合排版。
+- **視覺化風險矩陣與下週交易計畫**：完整涵蓋下週四 9 月 CPI 通膨數據與下週五華爾街大行財報季揭幕等 5 大核心觀測指標。
+No report artifact changes to commit.
+===== 2026-10-03 08:06:51 +0800 daily_us_market_report end =====
+WARN: primary Pages URL is not available, publishing fallback: https://wisdom925.github.io/html-report-skill/reports/2026-10-02-us-stock-closing-daily-report.html
+來自 https://github.com/wisdom925/reports
+ * branch            main       -> FETCH_HEAD
+已經是最新的。
+[main 8fd5190] report: 美股收盤日報備援｜2026-10-02
+ 2 files changed, 1802 insertions(+)
+ create mode 100644 reports/2026-10-02-us-stock-closing-daily-report.html
+To https://github.com/wisdom925/reports.git
+   11b13ba..8fd5190  main -> main
+===== 2026-10-06 08:00:57 +0800 daily_us_market_report start =====
+來自 https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+已經是最新的。
+Prior reports are produced by generator scripts. I'll look at the latest one.
+Yahoo works. Check the query script.
+root agent idle; waiting up to 12m0s for 3 background task(s)
+Meanwhile, search for news context.
+Waiting for completion.
+Ending turn to wait for notification.
+I'll stop here and wait for the notification.
+Rewrite with short timeouts, parallelism, and unbuffered logging.
+Waiting for the cooldown task to complete.
