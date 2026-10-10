@@ -4739,3 +4739,45 @@ To https://github.com/wisdom925/reports.git
 來自 https://github.com/wisdom925/html-report-skill
  * branch            main       -> FETCH_HEAD
 已經是最新的。
+美股交易日 **2026-10-08** 的《美股收盤日報》已全數生成完畢，並完成格式校驗、更新清單、提交 Commit 與推送發布至 GitHub Pages。
+
+### 🌐 公開報告網址
+👉 **[美股收盤日報｜2026-10-08](https://wisdom925.github.io/html-report-skill/reports/2026-10-08-us-stock-closing-daily-report.html)**
+
+---
+
+### 📁 執行成果摘要
+
+1. **報告檔案**：[reports/2026-10-08-us-stock-closing-daily-report.html](file:///Users/wisdom/html-report-skill/reports/2026-10-08-us-stock-closing-daily-report.html)（90.6 KB）
+   - 嚴格依照 [daily_report_prompt.md](file:///Users/wisdom/html-report-skill/daily_report_prompt.md) 指令規範，完整實作第 0 至第 15 區塊。
+   - 包含 **Chart.js** 動態漲跌對比柱狀圖、**Mermaid** 盤中時間線流程圖、**Tabs** 分頁宏觀環境、Vanilla JS **排序與搜尋** 表格（板塊與個股）、`<details>` 折疊面板、視覺化**風險矩陣**與 23 檔核心個股**決策標籤**。
+2. **清單更新**：[reports/manifest.json](file:///Users/wisdom/html-report-skill/reports/manifest.json) 已將 2026-10-08 最新日報成功置頂。
+3. **相關腳本與數據快照**：
+   - [generate_report_20261008.py](file:///Users/wisdom/html-report-skill/generate_report_20261008.py)（報告建構與發布腳本）
+   - [scratch/fetch_2026-10-08.py](file:///Users/wisdom/html-report-skill/scratch/fetch_2026-10-08.py)（報價資料抓取腳本）
+   - [scratch/quotes_2026-10-08.json](file:///Users/wisdom/html-report-skill/scratch/quotes_2026-10-08.json)（75 檔標的行情數據）
+   - [scratch/tech_2026-10-08.json](file:///Users/wisdom/html-report-skill/scratch/tech_2026-10-08.json)（均線、RSI、MACD 指標）
+4. **Git 提交與發布**：
+   - Commit `90f9de0` 已成功推送至遠端 `origin/main`。
+   - 作業範圍全程嚴格限制在目前的 `/Users/wisdom/html-report-skill` 倉庫內，未寫入 `~/reports`。
+
+---
+
+### 📊 2026-10-08 盤面核心重點復盤
+
+* **大盤表現與背離**：
+  * **標普 500（^GSPC）**：收 **7,765.36**（**-0.47%**），受晶片權重股拖累回踩，但守穩 20 日均線（7,654 點）之上。
+  * **納斯達克（^IXIC）**：重挫 **-1.25%** 收 **27,193.34**；**費城半導體（^SOX）**暴跌 **-3.39%** 收 **12,623.71**。
+  * **道瓊工業（^DJI）**：逆勢微漲 **+0.10%**（+51.77 點）收 **51,231.64**，防禦性傳產與能源權重護盤。
+  * **等權標普（RSP）**：逆勢大漲 **+0.60%**，標普 11 大板塊中有高達 **8 個板塊收紅**，呈現「指數殺估值、個股底層普漲」的顯著風格分化。
+* **核心驅動因素**：
+  * **地緣推升油價**：中東衝突升級擔憂刺激 WTI 原油飆漲 **+3.29%**（收 $91.18/桶）、Brent 突破 $104/桶，能源板塊（XLE **+2.97%**）領跑全場。
+  * **AI 硬體獲利了結**：市場傳出 OpenAI 短期營收增長放緩，引發投資人對科技巨頭龐大 AI Capex 投資回報率（ROI）的疑慮，晶片股（MU **-4.79%**、ARM **-6.48%**、AVGO **-4.35%**、NVDA **-2.94%**）與電力設備（COHR **-9.63%**、VST **-6.35%**）遭遇集中拋售。
+  * **資金湧入 SaaS 與防禦股**：企業軟體龍頭逆勢爆發（ADBE **+3.56%**、SNOW **+3.17%**、PLTR **+2.40%**、CRM **+1.44%**、NOW **+1.36%**），必需消費（XLP **+2.11%**）與蘋果（AAPL **+1.11%**）展現極佳避險防禦性。
+  * **勞動市場與長端利率**：初請失業金人數降至 **19.7 萬**（連續 4 週低於 20 萬，1969 年以來罕見低位）；下午美國財政部 30 年期國債拍賣需求強勁，推動 10 年期美債殖利率自盤初 5.35% 高位回落至 **5.23%**。
+No report artifact changes to commit.
+===== 2026-10-09 08:10:42 +0800 daily_us_market_report end =====
+===== 2026-10-10 08:00:55 +0800 daily_us_market_report start =====
+來自 https://github.com/wisdom925/html-report-skill
+ * branch            main       -> FETCH_HEAD
+已經是最新的。
